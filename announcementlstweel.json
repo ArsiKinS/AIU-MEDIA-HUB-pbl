@@ -1,0 +1,36 @@
+[
+  {
+    "announcement_id": 101,
+    "title": "Sports Day Registration Open",
+    "description": "Students can now register for the annual Sports Day through the student portal.",
+    "date": "2024-12-29",
+    "category": "Sports",
+    "img": "img/announcement/a2.jpg"
+  },
+  {
+    "announcement_id": 102,
+    "title": "Water Supply Maintenance",
+    "description": "Temporary water disruption due to scheduled maintenance work.",
+    "date": "2024-12-30",
+    "category": "Facility",
+    "img": "img/announcement/a(4).jpg"
+  },
+  {
+    "announcement_id": 103,
+    "title": "Internship Briefing Session",
+    "description": "A briefing session for internship placement will be held in the main hall.",
+    "date": "2024-12-27",
+    "category": "Career",
+    "img": "img/announcement/a1.jpg"
+    
+  },
+  {
+    "announcement_id": 104,
+    "title": "Workshop Registration Closed",
+    "description": "Registration for the web development workshop is now closed.",
+    "date": "2024-12-26",
+    "category": "Academic",
+    "img": "img/announcement/a2.jpg"
+  }
+ 
+]

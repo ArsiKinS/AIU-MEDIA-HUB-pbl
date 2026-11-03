@@ -1,0 +1,163 @@
+[
+  {
+    "id": 1,
+    "title": "AIU TECH Workshop",
+    "category": "News",
+    "image": "img/silder1.jpg",
+    
+    "date": "2025-12-01",
+    "content": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus at libero commodo cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit."
+  },
+  {
+    "id": 2,
+    "title": "Student Innovation Fair",
+    "category": "Events",
+    "image": "img/news2.jpg",
+    "date": "2025-11-28",
+    "content": "Suspendisse potenti. Curabitur quis arcu eu risus cursus fermentum a at ligula.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus at libero commodo cursus.Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla nec purus at libero commodo cursus."
+  },
+  {
+    "id": 3,
+    "title": "Campus Sustainability Initiative",
+    "category": "Announcements",
+    "image": "img/news3.jpg",
+    "date": "2025-11-25",
+    "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+  },
+  {
+    "id": 4,
+    "title": "AI Seminar for Students",
+    "category": "Events",
+    "image": "img/news4.jpg",
+    "date": "2025-11-22",
+    "content": "Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae."
+  },
+  {
+    "id": 5,
+    "title": "New Library Opening",
+    "category": "Announcements",
+    "image": "img/news5.jpg",
+    "date": "2025-11-20",
+    "content": "Fusce sit amet metus sed nulla lacinia euismod. Sed sollicitudin massa ac sapien pharetra."
+  },
+  {
+    "id": 6,
+    "title": "Tech Club Meetup",
+    "category": "Events",
+    "image": "img/news6.jpg",
+    "date": "2025-11-18",
+    "content": "Morbi rhoncus erat et risus vulputate, id ultrices libero facilisis."
+  },
+  {
+    "id": 7,
+    "title": "Health Awareness Campaign",
+    "category": "News",
+    "image": "img/news7.jpg",
+    "date": "2025-11-15",
+    "content": "Integer tincidunt justo ac arcu sollicitudin, a lacinia metus ultricies."
+  },
+  {
+    "id": 8,
+    "title": "AI Competition Winners",
+    "category": "News",
+    "image": "img/news8.jpg",
+    "date": "2025-11-12",
+    "content": "Donec et magna sit amet lorem dapibus convallis."
+  },
+  {
+    "id": 9,
+    "title": "Alumni Networking Event",
+    "category": "Events",
+    "image": "img/news9.jpg",
+    "date": "2025-11-10",
+    "content": "Nam vel erat nec eros vestibulum elementum in sed risus."
+  },
+  {
+    "id": 10,
+    "title": "Campus Art Exhibition",
+    "category": "Events",
+    "image": "img/news10.jpg",
+    "date": "2025-11-08",
+    "content": "Aenean non ex non nulla scelerisque tincidunt."
+  },
+  {
+    "id": 11,
+    "title": "Student Hackathon 2025",
+    "category": "Events",
+    "image": "img/news11.jpg",
+    "date": "2025-11-05",
+    "content": "Praesent luctus sapien ut metus commodo, ac mattis justo ultricies."
+  },
+  {
+    "id": 12,
+    "title": "New Cafeteria Menu Launch",
+    "category": "Announcements",
+    "image": "img/news12.jpg",
+    "date": "2025-11-02",
+    "content": "Curabitur et leo eu ex pharetra pretium."
+  },
+  {
+    "id": 13,
+    "title": "Library Digital Upgrade",
+    "category": "Announcements",
+    "image": "img/news13.jpg",
+    "date": "2025-10-30",
+    "content": "Suspendisse finibus sapien nec lorem congue, vitae tristique orci aliquet."
+  },
+  {
+    "id": 14,
+    "title": "AI Workshop for Beginners",
+    "category": "Events",
+    "image": "img/news14.jpg",
+    "date": "2025-10-28",
+    "content": "Etiam vel sapien nec odio consectetur eleifend."
+  },
+  {
+    "id": 15,
+    "title": "Sustainability Talk Series",
+    "category": "News",
+    "image": "img/news15.jpg",
+    "date": "2025-10-25",
+    "content": "Quisque id velit sit amet justo suscipit lacinia."
+  },
+  {
+    "id": 16,
+    "title": "Sports Day Highlights",
+    "category": "News",
+    "image": "img/news16.jpg",
+    "date": "2025-10-22",
+    "content": "Mauris vitae nulla non sapien imperdiet lacinia."
+  },
+  {
+    "id": 17,
+    "title": "Student Council Elections",
+    "category": "Announcements",
+    "image": "img/news17.jpg",
+    "date": "2025-10-20",
+    "content": "Vestibulum vehicula nisl non erat tincidunt, sed tempor libero blandit."
+  },
+  {
+    "id": 18,
+    "title": "New Lab Equipment Arrival",
+    "category": "Announcements",
+    "image": "img/news18.jpg",
+    "date": "2025-10-18",
+    "content": "Aliquam erat volutpat. Sed porta turpis vitae justo tincidunt, vitae placerat nisl tincidunt."
+  },
+  {
+    "id": 19,
+    "title": "Tech Talk Series",
+    "category": "Events",
+    "image": "img/news19.jpg",
+    "date": "2025-10-15",
+    "content": "Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas."
+  },
+  {
+    "id": 20,
+    "title": "Campus Renovation Updates",
+    "category": "News",
+    "image": "img/news20.jpg",
+    "date": "2025-10-12",
+    "content": "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+  }
+]

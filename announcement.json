@@ -1,0 +1,154 @@
+[
+  {
+    "announcement_id": 1,
+    "title": "Student Council Meeting",
+    "description": "A general meeting will be held to discuss upcoming student activities.",
+    "date": "2025-01-05",
+    "category": "General",
+    "is_featured": true
+  },
+  {
+    "announcement_id": 2,
+    "title": "Library Extended Hours",
+    "description": "The library will remain open until 10 PM during exam week.",
+    "date": "2025-01-06",
+    "category": "Academic",
+    "is_featured": true
+  },
+  {
+    "announcement_id": 3,
+    "title": "Club Registration Open",
+    "description": "Students can now register for clubs via the student portal.",
+    "date": "2025-01-07",
+    "category": "Student Life",
+    "is_featured": true
+  },
+  {
+    "announcement_id": 4,
+    "title": "Midterm Exam Schedule",
+    "description": "Midterm exam timetable has been released.",
+    "date": "2025-01-08",
+    "category": "Academic",
+    "is_featured": true
+  },
+  {
+    "announcement_id": 5,
+    "title": "Career Talk Session",
+    "description": "A career talk will be conducted by industry professionals.",
+    "date": "2025-01-09",
+    "category": "Career",
+    "is_featured": true
+  },
+  {
+    "announcement_id": 6,
+    "title": "Maintenance Notice",
+    "description": "Water supply will be interrupted due to maintenance work.",
+    "date": "2024-12-30",
+    "category": "Facility",
+    "is_featured": false
+  },
+  {
+    "announcement_id": 7,
+    "title": "Sports Day Registration",
+    "description": "Registration for Sports Day is now open.",
+    "date": "2024-12-29",
+    "category": "Sports",
+    "is_featured": false
+  },
+  {
+    "announcement_id": 8,
+    "title": "Lost and Found Items",
+    "description": "Collected lost items are available at the admin office.",
+    "date": "2024-12-28",
+    "category": "General",
+    "is_featured": false
+  },
+  {
+    "announcement_id": 9,
+    "title": "Internship Opportunity",
+    "description": "New internship opportunities are available for final-year students.",
+    "date": "2024-12-27",
+    "category": "Career",
+    "is_featured": false
+  },
+  {
+    "announcement_id": 10,
+    "title": "Cafeteria Menu Update",
+    "description": "New healthy menu options are now available.",
+    "date": "2024-12-26",
+    "category": "Facility",
+    "is_featured": false
+  },
+  {
+    "announcement_id": 11,
+    "title": "Workshop on Web Development",
+    "description": "A hands-on workshop on modern web development tools.",
+    "date": "2024-12-25",
+    "category": "Academic",
+    "is_featured": false
+  },
+  {
+    "announcement_id": 12,
+    "title": "Holiday Notice",
+    "description": "University will be closed for public holidays.",
+    "date": "2024-12-24",
+    "category": "General",
+    "is_featured": false
+  },
+  {
+    "announcement_id": 13,
+    "title": "Volunteer Program",
+    "description": "Students are invited to join the community volunteer program.",
+    "date": "2024-12-23",
+    "category": "Student Life",
+    "is_featured": false
+  },
+  {
+    "announcement_id": 14,
+    "title": "Exam Result Release",
+    "description": "Semester exam results will be released online.",
+    "date": "2024-12-22",
+    "category": "Academic",
+    "is_featured": false
+  },
+  {
+    "announcement_id": 15,
+    "title": "Feedback Survey",
+    "description": "Students are encouraged to complete the semester feedback survey.",
+    "date": "2024-12-21",
+    "category": "General",
+    "is_featured": false
+  },
+  {
+    "announcement_id": 12,
+    "title": "Holiday Notice",
+    "description": "University will be closed for public holidays.",
+    "date": "2024-12-24",
+    "category": "General",
+    "is_featured": false
+  },
+  {
+    "announcement_id": 13,
+    "title": "Volunteer Program",
+    "description": "Students are invited to join the community volunteer program.",
+    "date": "2024-12-23",
+    "category": "Student Life",
+    "is_featured": true
+  },
+  {
+    "announcement_id": 14,
+    "title": "Exam Result Release",
+    "description": "Semester exam results will be released online.",
+    "date": "2024-12-22",
+    "category": "Academic",
+    "is_featured": true
+  },
+  {
+    "announcement_id": 15,
+    "title": "Feedback Survey",
+    "description": "Students are encouraged to complete the semester feedback survey.",
+    "date": "2024-12-21",
+    "category": "General",
+    "is_featured": true
+  }
+]

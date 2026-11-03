@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../index.html">
+    <link rel="stylesheet" href="contact.css">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="logo_head">
+            <div class="logo">
+                <img src="../img/logo.jpg" alt="">
+            </div>
+            <div
+                class="nav_profile w-10 h-10 bg-[#0c9e95] text-amber-50 flex items-center justify-center cursor-pointer p-2 rounded-full hover:bg-cyan-900 transition duration-300">
+                <div class="profile-container con">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <ul>
+                    <li><a href="dashboard.html">Dashboard</a></li>
+                    <li><a href="logout.html">Logout</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <nav class="nav container  w-100% flex relative">
+
+
+            <div class="nav__menus z-20 " id="nav-menu ">
+                <ul class="nav__list gap-[20px] ">
+                    <div class=" hover:bg-[#086962] w-full ">
+                        <li class="../index.html"><a
+                                class="h-full text-white-600 hover:text-white transition duration-300" href="">Home</a>
+                        </li>
+                    </div>
+
+
+                    <div class="">
+                        <li
+                            class="nav-item group relative border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+
+                            <a class="text-white hover:text-white transition duration-300 flex items-center gap-1 "
+                                href="../new/news.html">
+                                News
+                                <span class="plus group-hover:hidden">+</span>
+                                <span class="minus hidden group-hover:inline">−</span>
+
+
+                            </a>
+
+                            <!-- DROPDOWN MENU -->
+                            <ul class="absolute left-0 translate-y-0 opacity scale-95 w-[150px] top-6 hidden group-hover:flex flex-col 
+           bg-white text-black shadow-lg  pointer-events-auto
+   scale-100 transition-all duration-300 ease-out origin-top p-3 pt-4 z-50">
+                                <li><a href="../new/news.html" class="px-3 py-1 hover:bg-gray-100 rounded">SCI</a></li>
+                                <li><a href="../new/sbss.html" class="px-3 py-1 hover:bg-gray-100 rounded">SBSS</a></li>
+                                <li><a href="../new/sehs.html" class="px-3 py-1 hover:bg-gray-100 rounded">SEHS</a></li>
+                                <li><a href="../new/inter_school.html" class="px-3 py-1 hover:bg-gray-100 rounded">AIU
+                                        School</a></li>
+                            </ul>
+                        </li>
+                    </div>
+
+
+
+
+
+
+
+                    <li
+                        class="nav-item group relative border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+                        <a class="text-white hover:text-white transition duration-300 flex items-center gap-1"
+                            href="../asso.html">
+                            Association
+                         
+                        </a>
+
+                        <!-- DROPDOWN MENU 
+                        <ul class="absolute left-0  w-[150px] translate-y-0 top-6 hidden group-hover:flex flex-col 
+           bg-white text-black shadow-lg  p-3 pt-4 z-50">
+                            <li><a href="s" class="px-3 py-1 hover:bg-gray-100 rounded">AMSA</a></li>
+                            <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">ATSA</a></li>
+                            <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">YSU</a></li>
+                            <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">Nisco</a></li>
+                        </ul>
+                        -->
+                    </li>
+
+                    <li
+                        class="nav-item group relative  border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+                        <a class="text-white hover:text-white transition duration-300 flex items-center gap-1"
+                            href="../announcement.html">
+                            Announcement
+
+                        </a>
+
+                        <!-- DROPDOWN MENU -->
+
+                    </li>
+
+                    <div
+                        class="nav__list__item  border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+                        <li class="list-item"><a class="h-full text-white-600 hover:text-white transition duration-300"
+                                href="contact.html">Contact</a></li>
+                    </div>
+
+                </ul>
+
+
+            </div>
+
+            <!-- Nav Search Bar 
+            <div class="search_container absolute right-0 pr-[45px] cursor-pointer">
+                <input id="search-input" type="text" placeholder="Search..." class="
+                  w-0                      
+                  pl-0                      
+                  opacity-0                
+                 text-[0.8rem]           
+                  text-black
+                  rounded-full 
+                  border-none 
+                  transition-all duration-300 ease-in-out
+                  outline-0
+                  pt-1
+                  pb-1
+                  
+                 ">
+                <i class="fa-solid fa-magnifying-glass  hover:to-blue-500" id="search-icon-trigger"></i>
+            </div>
+
+-->
+
+        </nav>
+    </header>
+    <!-- Content -->
+    <div class="contact container flex mt-5 gap-6">
+
+        <!-- Sidebar -->
+        <div class="sidebar w-[350px]">
+            <a href="contact.html">General Inquiries</a>
+            <a href="report.html">Report</a>
+            <a class="active" href="feedback.html">Feedback</a>
+        </div>
+
+        <!-- Page content -->
+        <div class="content w-full font-sans">
+            <div class="bg-white p-8 rounded-xl shadow-md w-full max-w-3xl">
+
+                <h2 class="text-xl md:text-2xl font-medium text-gray-900 mb-1">
+                    Feedback
+                </h2>
+                <p class="text-gray-600 text-sm mb-6 leading-relaxed">
+                    We value your feedback. Please share your thoughts, suggestions, or experience with us.
+                </p>
+
+                <form class="space-y-5 text-sm text-gray-700">
+
+                    <!-- Full Name -->
+                    <div>
+                        <label class="block mb-1 font-medium">Full Name</label>
+                        <input type="text" placeholder="Your full name" class="w-full px-4 py-2.5 border border-gray-300 rounded-md
+                   focus:outline-none focus:ring-2 focus:ring-blue-500
+                   placeholder-gray-400" required />
+                    </div>
+
+                    <!-- Email -->
+                    <div>
+                        <label class="block mb-1 font-medium">Email Address</label>
+                        <input type="email" placeholder="you@example.com" class="w-full px-4 py-2.5 border border-gray-300 rounded-md
+                   focus:outline-none focus:ring-2 focus:ring-blue-500
+                   placeholder-gray-400" required />
+                    </div>
+
+                    <!-- Feedback Type -->
+                    <div>
+                        <label class="block mb-1 font-medium">Feedback Type</label>
+                        <select class="w-full px-4 py-2.5 border border-gray-300 rounded-md
+                   focus:outline-none focus:ring-2 focus:ring-blue-500">
+                            <option>Select feedback type</option>
+                            <option>Suggestion</option>
+                            <option>Complaint</option>
+                            <option>Compliment</option>
+                            <option>Other</option>
+                        </select>
+                    </div>
+
+                    <!-- Message -->
+                    <div>
+                        <label class="block mb-1 font-medium">Your Feedback</label>
+                        <textarea rows="5" placeholder="Write your feedback here..." class="w-full px-4 py-2.5 border border-gray-300 rounded-md
+                   focus:outline-none focus:ring-2 focus:ring-blue-500
+                   placeholder-gray-400" required></textarea>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="w-[200px] bg-[#0c9e95] text-white py-2.5 rounded-md
+                 font-medium hover:bg-[#0d7d76] transition">
+                        Submit Feedback
+                    </button>
+
+                </form>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Footer-->
+    <section class="footer">
+        <footer class="bg-[#0d2c6c] text-gray-300 py-12 mt-20 p-10">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+
+                <!-- University Contact -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Contact University News Desk</h3>
+                    <p>Email us at <span class="font-semibold">news@university.edu</span></p>
+                    <p>Available 9 AM – 5 PM</p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 block mt-2">Submit a Story</a>
+                    <a href="#" class="text-blue-400 hover:text-blue-300">Media Inquiries</a>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Latest News</a></li>
+                        <li><a href="#" class="hover:text-white">Campus Announcements</a></li>
+                        <li><a href="#" class="hover:text-white">Events & Activities</a></li>
+                        <li><a href="#" class="hover:text-white">Student Achievements</a></li>
+                        <li><a href="#" class="hover:text-white">Research Highlights</a></li>
+                    </ul>
+                </div>
+
+                <!-- About the University -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">About the University</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">University Overview</a></li>
+                        <li><a href="#" class="hover:text-white">Academic Faculties</a></li>
+                        <li><a href="#" class="hover:text-white">Campus Life</a></li>
+                        <li><a href="#" class="hover:text-white">Admissions</a></li>
+                        <li><a href="#" class="hover:text-white">Career Opportunities</a></li>
+                    </ul>
+                </div>
+
+                <!-- Student Services -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Student Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Library Portal</a></li>
+                        <li><a href="#" class="hover:text-white">E-Learning System</a></li>
+                        <li><a href="#" class="hover:text-white">Student Portal</a></li>
+                        <li><a href="#" class="hover:text-white">Counseling Services</a></li>
+                        <li><a href="#" class="hover:text-white">Campus Map</a></li>
+                    </ul>
+
+                    <p class="mt-3 text-sm">
+                        Need help? <span class="text-blue-400">support@university.edu</span><br>
+                        Hotline: <span class="font-semibold">+1 (800) 123-4567</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 my-8"></div>
+
+            <!-- Footer bottom -->
+            <div class="max-w-7xl mx-auto px-6 text-sm text-gray-400 flex flex-wrap gap-6">
+                <a href="#" class="hover:text-white">Terms & Conditions</a>
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Campus Safety</a>
+                <a href="#" class="hover:text-white">Accessibility</a>
+                <a href="#" class="hover:text-white">Newsletter</a>
+            </div>
+
+            <p class="text-center text-gray-500 text-sm mt-6">
+                © 2025 Your University Name — All Rights Reserved.
+            </p>
+        </footer>
+    </section>
+
+</body>
+
+</html>

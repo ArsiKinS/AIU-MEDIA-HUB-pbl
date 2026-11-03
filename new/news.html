@@ -1,0 +1,875 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIU NEWS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+    <link href="./output.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<body>
+
+    <body class="bg-[#dbffd3]">
+        <!--=============== HEADER ===============-->
+        <header class="header  bg-white fixed top-0 left-0 w-full z-50">
+            <div class="logo_head">
+                <div class="logo">
+                    <img src="../img/logo.jpg" alt="">
+                </div>
+                <div
+                    class="nav_profile w-10 h-10 bg-[#0c9e95] text-amber-50 flex items-center justify-center cursor-pointer p-2 rounded-full hover:bg-cyan-900 transition duration-300">
+                    <div class="profile-container con " id="profile-icon">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <nav class="nav container  w-100% flex relative">
+
+
+                <div class="nav__menus z-20 " id="nav-menu ">
+                    <ul class="nav__list gap-[20px] ">
+                        <div class=" hover:bg-[#086962] w-full ">
+                            <li class="list-item"><a
+                                    class="h-full text-white-600 hover:text-white transition duration-300"
+                                    href="../index.html">Home</a></li>
+                        </div>
+
+
+                        <div class="">
+                            <li
+                                class="nav-item group relative border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+
+                                <a class="text-white hover:text-white transition duration-300 flex items-center gap-1 "
+                                    href="news.html">
+                                    News
+                                    <span class="plus group-hover:hidden">+</span>
+                                    <span class="minus hidden group-hover:inline">−</span>
+
+
+                                </a>
+
+                                <!-- DROPDOWN MENU -->
+                                <ul class="absolute left-0 translate-y-0 opacity scale-95 w-[150px] top-6 hidden group-hover:flex flex-col 
+           bg-white text-black shadow-lg  pointer-events-auto
+   scale-100 transition-all duration-300 ease-out origin-top p-3 pt-4 z-50">
+                                    <li><a href="sci.html" class="px-3 py-1 hover:bg-gray-100 rounded">SCI</a></li>
+                                    <li><a href="sbss.html" class="px-3 py-1 hover:bg-gray-100 rounded">SBSS</a></li>
+                                    <li><a href="sehs.html" class="px-3 py-1 hover:bg-gray-100 rounded">SEHS</a></li>
+                                    <li><a href="inter_school.html" class="px-3 py-1 hover:bg-gray-100 rounded">AIU
+                                            International School</a></li>
+                                </ul>
+                            </li>
+                        </div>
+
+
+
+
+
+
+
+                        <li
+                            class="nav-item group relative border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+                            <a class="text-white hover:text-white transition duration-300 flex items-center gap-1"
+                                href="../asso.html">
+                                Association
+                                <!--
+                                <span class="plus group-hover:hidden">+</span>
+                                <span class="minus hidden group-hover:inline">−</span>
+                                -->
+                            </a>
+
+                            <!-- DROPDOWN MENU
+                            <ul class="absolute left-0  w-[150px] translate-y-0 top-6 hidden group-hover:flex flex-col 
+           bg-white text-black shadow-lg  p-3 pt-4 z-50">
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">AMSA</a></li>
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">ATSA</a></li>
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">YSU</a></li>
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">Nisco</a></li>
+                            </ul>
+                             -->
+                        </li>
+
+                        <li
+                            class="nav-item group relative  border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+                            <a class="text-white hover:text-white transition duration-300 flex items-center gap-1"
+                                href="#">
+                                Announcement
+                              
+                            </a>
+
+                            <!-- DROPDOWN MENU 
+                            <ul class="absolute left-0  translate-y-0 w-[150px] top-6 hidden group-hover:flex flex-col 
+           bg-white text-black shadow-lg  p-3 pt-4 z-50">
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">SCI</a></li>
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">SBSS</a></li>
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">SHS</a></li>
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">AIU School</a></li>
+                            </ul>
+                            -->
+                        </li>
+
+                        <div
+                            class="nav__list__item  border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+                            <li class="list-item"><a
+                                    class="h-full text-white-600 hover:text-white transition duration-300"
+                                    href="">Contact</a></li>
+                        </div>
+
+                    </ul>
+
+
+                </div>
+
+                <!-- Nav BookMark Bar -->
+                <div class="search_container absolute right-0 pr-[45px] cursor-pointer">
+                    <input id="search-input" type="text" placeholder="Search..." class="
+                  w-0                      
+                  pl-0                      
+                  opacity-0                
+                 text-[0.8rem]           
+                  text-black
+                  rounded-full 
+                  border-none 
+                  transition-all duration-300 ease-in-out
+                  outline-0
+                  pt-1
+                  pb-1
+                  
+                 ">
+                    <i id="bookmark"
+                        class="bookmark fas fa-bookmark ml-1.5 text-xl mt-1 text-[#0d1849] cursor-pointer hover:text-[white]"></i>
+                </div>
+
+
+
+
+
+            </nav>
+        </header>
+
+
+        <!-- BookMark Side Bar-->
+
+        <div id="sidebar" class="fixed top-0 right-0 w-72 h-full bg-white shadow-lg
+            transform translate-x-full transition-transform duration-300 z-50 overflow-y-auto scrollbar-hide">
+
+            <!-- Close button -->
+            <div class="container flex justify-between ">
+                <h1 class="mt-[26px] text-xl font-semibold text-gray-900 border-b pb-2">
+                    Your Bookmark List
+                </h1>
+                <button id="closeSidebar" class="p-4 text-xl">✕</button>
+            </div>
+
+
+
+            <div id="bookmarkList" class="pl-[15px] "></div>
+        </div>
+        <!-- BookMark Side Bar-->
+
+
+        <!-- User Profile Side Bar !-->
+
+        <div id="profile_sidebar" class="fixed top-0 right-0 w-[400px] h-full bg-[#f6f7f5] shadow-lg
+            transform  transition-transform duration-300 z-50 overflow-y-auto scrollbar-hide hidden">
+            <!-- Header -->
+            <div class="flex items-center justify-between px-6 py-4 border-b">
+                <h2 class="text-lg font-semibold">Student Profile</h2>
+                <button id="p_closeSidebar" class="text-gray-500 hover:text-black text-xl">
+                    ✕
+                </button>
+            </div>
+
+            <!-- Cover + Avatar -->
+            <div class="relative">
+                <img src="https://images.unsplash.com/photo-1524995997946-a1c2e315a42f" class="w-full h-36 object-cover"
+                    alt="Cover" />
+
+                <img src="https://i.pravatar.cc/100"
+                    class="absolute -bottom-10 left-6 w-20 h-20 rounded-full border-4 border-[#f6f7f5]" alt="Avatar" />
+            </div>
+
+            <!-- Profile Info -->
+            <div class="pt-14 px-6">
+                <div class="namecontainer flex justify-centent" id="namecontainer">
+                    <h3 class="text-xl font-semibold inline-flex">Aye Sandi Myint </h3>
+                    <i id="pencil" class="fa-solid fa-pencil text-[17px] ml-[10px] mt-[5px]"></i>
+                </div>
+                <input id="nameInput" type="text"
+                    class="hidden border px-1  py-2 rounded mt-2 mb-4 w-[200px] h-[40px] pl-0 py-2 border bg-transparent border-gray-300 rounded-lg  focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition duration-200"
+                    value="Aye Sandi Myint">
+
+                <button id="saveBtn"
+                    class="hidden mt-2 mx-auto bg-[#0c9e95] text-[14px] flex-inline justify-center text-white shadow-sm rounded h-[40px] w-[50px]">
+                    Save
+                </button>
+
+                <p class="text-sm text-gray-500">Student · CFGS</p>
+
+                <p class="text-xs text-gray-400 mt-1">
+                    ID: AIU2024-001
+                </p>
+
+                <!-- Stats -->
+                <div class="flex justify-between text-center mt-5">
+                    <div>
+                        <p class="font-semibold">24</p>
+                        <p class="text-xs text-gray-500">Articles Read</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold">8</p>
+                        <p class="text-xs text-gray-500">Bookmarks</p>
+                    </div>
+                    <div>
+                        <p class="font-semibold">5</p>
+                        <p class="text-xs text-gray-500">Comments</p>
+                    </div>
+                </div>
+
+                <!-- Actions -->
+                <div class="mt-6 space-y-3">
+
+                    <button class="w-full border rounded-lg py-2 hover:bg-gray-200">
+                        🔖 Saved Articles
+                    </button>
+                </div>
+
+                <!-- About -->
+                <div class="mt-6  " id="aboutcontainer">
+                    <div class="flex">
+                        <h4 class="font-semibold mb-2">About</h4>
+                        <i id="pencil_about" class="fa-solid pb-6 fa-pencil text-[14px] ml-[10px] mt-[5px]"></i>
+                    </div>
+
+                    <p class="para text-sm text-gray-600 ">
+                        CFGS student at Albukhary International University.
+                        Interested in technology, media, and campus events.
+                    </p>
+                    <textarea id="aboutInput" type="text"
+                        class="hidden border px-1  py-2 rounded mt-2 mb-4 w-[350px] h-[120px] pl-0 py-2 border bg-transparent border-gray-300 rounded-lg  focus:outline-none focus:ring-2 focus:ring-cyan-500 focus:border-cyan-500 transition duration-200"
+                        value="Aye Sandi Myint"> </textarea>
+
+                    <button id="aboutBtn"
+                        class="hidden mt-2 mx-auto bg-[#0c9e95] text-[14px] flex-inline justify-center text-white shadow-sm rounded h-[40px] w-[50px]">
+                        Save
+                    </button>
+                </div>
+
+                <!-- Tags -->
+                <div class="flex flex-wrap gap-2 mt-5">
+                    <span class="px-3 py-1 bg-gray-200 text-xs rounded-full">Student</span>
+                    <span class="px-3 py-1 bg-gray-200 text-xs rounded-full">AIU</span>
+                    <span class="px-3 py-1 bg-gray-200 text-xs rounded-full">News Reader</span>
+                </div>
+            </div>
+
+            <!-- Logout -->
+            <div class="p-6 mt-6 border-t">
+                <a href="login/login2.html">
+                    <button class="w-full bg-black text-white py-3 rounded-lg hover:bg-gray-800">
+                        Log out
+                    </button></a>
+
+            </div>
+
+
+        </div>
+
+        <!-- User Profile Side Bar !-->
+
+
+
+
+        <section class="relative mt-[50px] h-[600px] w-full overflow-hidden">
+
+            <!-- Background Image -->
+            <img src="../img/sci/main.jpg" alt=""
+                class="absolute inset-0 h-full w-full object-cover scale-110 blur-sm" />
+
+            <!-- Animated Gradient Overlay -->
+            <div class="absolute inset-0 gradient-animate1"></div>
+
+            <!-- Content -->
+            <div class="relative z-10 flex h-full flex-col items-center justify-center text-center px-4">
+
+                <h1 class="hero-text text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+                  Official AIU School <br>
+                   Notices and Announcements
+                </h1>
+
+                <div class="line-animate h-[6px] bg-[#0c9e95] rounded-full"></div>
+
+            </div>
+
+        </section>
+        <section class="section-2-1 w-full bg-[#dbffd3] h-[1300px] pb-0 mb=0" id="s21">
+            <div class="general-container pl-[53px]  pr-[53px] pt-[20] w-full flex justify-between gap-3">
+
+                <!-- LEFT SIDE — WEEKLY (70%) -->
+                <div class="weekly-content w-[70%] h-lvh  mt-[30px] ">
+
+                    <div class="news-container w-full flex flex-col gap-3 ">
+
+                        <!-- News One -->
+                        <div class="news-one px-4 h-[450px] max-h-auto  bg-white py-4 px-0 rounded-lg shadow " id="news-one">
+                         
+                        </div>
+
+                        <!-- News 2 & 3 -->
+                        <div class="news-2-3-container grid grid-cols-2 gap-3 mt-[20px] ">
+
+                            <!-- News Two -->
+                            <div class="news-two bg-white py-4 px-0 rounded-lg shadow px-4" id="news-two">
+     
+                            </div>
+
+                            <!-- News Three -->
+                            <div class="news-three bg-white py-4 px-0 rounded-lg shadow px-4" id="news-three">
+
+                            </div>
+
+                        </div>
+
+
+                    </div>
+
+                    
+                </div>
+
+                <!-- RIGHT SIDE — LAST WEEK (30%) -->
+                <div class="last-week-content mt-[30px] w-[30%] h-[880px] ">
+                    <div class="event-title w-[170px] bg-[#0c9e95] ">
+                        <p class=" w-[180px] h-[30px]  px-2 mb-3.5 text-amber-50 flex justify-center items-center ">Up
+                            Coming Event</p>
+                    </div>
+                    <div class="last-week-contents flex flex-col gap-4">
+
+                        <!-- Content 1 -->
+                        <div class="content-item bg-white h-[180px] py-4 px-0 rounded-lg shadow flex gap-3 items-start px-3" id="Rc1">
+
+
+                        </div>
+
+                        <!-- Content 2 -->
+                        <div class="content-item bg-white py-4 h-[180px] px-0 rounded-lg shadow flex gap-3 items-start px-3" id="Rc2">
+
+   
+
+                        </div>
+
+                        <!-- Content 3 -->
+                        <div class="content-item bg-white py-4 h-[180px] px-0 rounded-lg shadow flex gap-3 items-start px-3" id="Rc3">
+
+                            <img src="your-image.jpg" class="w-20 h-20 object-cover rounded-md" />
+
+                            <div class="flex flex-col">
+                                <h3 class="text-lg font-bold">Last Week Title 3</h3>
+                                <p class="text-gray-700 mt-1">Short description for last week content.</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600">Read more</a>
+                            </div>
+
+                        </div>
+
+                        <!-- Content 4 -->
+                        <div class="content-item bg-white py-4 h-[180px] px-0 rounded-lg shadow flex gap-3 items-start px-3" id="Rc4">
+
+                            <img src="your-image.jpg" class="w-20 h-20 object-cover rounded-md" />
+
+                            <div class="flex flex-col">
+                                <h3 class="text-lg font-bold">Last Week Title 3</h3>
+                                <p class="text-gray-700 mt-1">Short description for last week content.</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600">Read more</a>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="section-2-2 w-full pl-[53px]  pr-[53px] pt-[20] w-full flex justify-between gap-3 ">
+                                        <!-- News 4 & 5 -->
+                        <div class="news-2-3-container grid grid-cols-3 gap-3 mt-[20px]  ">
+
+                            <!-- News four-->
+                            <div class="news-two bg-white py-4 px-0 rounded-lg shadow px-4" id="news-four">
+     
+                            </div>
+
+                            <!-- News Five -->
+                            <div class="news-three bg-white py-4 px-0 rounded-lg shadow px-4" id="news-five">
+
+                            </div>
+                            
+                            <!-- News Five -->
+                            <div class="news-three bg-white py-4 px-0 rounded-lg shadow px-4" id="news-six">
+
+                            </div>
+
+                        </div>
+            </div>
+        </section>
+
+        <section class="footer ">
+
+        
+                <footer class="bg-[#0d2c6c] text-gray-300 py-12 mt-20 p-10">
+                    <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+
+                        <!-- University Contact -->
+                        <div>
+                            <h3 class="text-white font-semibold mb-4">Contact University News Desk</h3>
+                            <p>Email us at <span class="font-semibold">news@university.edu</span></p>
+                            <p>Available 9 AM – 5 PM</p>
+                            <a href="contact/contact.html" class="text-blue-400 hover:text-blue-300">Media Inquiries</a>
+                        </div>
+
+                        <!-- Quick Links -->
+                        <div>
+                            <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+                            <ul class="space-y-2">
+                                <li><a href="#" class="hover:text-white">Latest News</a></li>
+                                <li><a href="#" class="hover:text-white">Campus Announcements</a></li>
+                                <li><a href="asso.html" class="hover:text-white">Events & Activities</a></li>
+                                <li><a href="#" class="hover:text-white">Student Achievements</a></li>
+                                <li><a href="#" class="hover:text-white">Research Highlights</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- About the University -->
+                        <div>
+                            <h3 class="text-white font-semibold mb-4">About the University</h3>
+                            <ul class="space-y-2">
+                                <li><a href="https://aiu.edu.my/" class="hover:text-white">University Overview</a></li>
+                                <li><a href="https://aiu.edu.my/academics/" class="hover:text-white">Academic
+                                        Faculties</a></li>
+                                <li><a href="https://aiu.edu.my/scholarship/" class="hover:text-white">Admissions</a>
+                                </li>
+                                <li><a href="https://aiu.edu.my/career/" class="hover:text-white">Career
+                                        Opportunities</a></li>
+                            </ul>
+                        </div>
+
+                        <!-- Student Services -->
+                        <div>
+                            <h3 class="text-white font-semibold mb-4">Student Services</h3>
+                            <ul class="space-y-2">
+                                <li><a href="https://library.aiu.edu.my/?_gl=1*13tc0f1*_ga*MTIyNzk1Njc0OS4xNzY0ODQyNTk5*_ga_3H2FPY046P*czE3Njc4MDk2MTMkbzEwJGcxJHQxNzY3ODEwMDQyJGoyMiRsMCRoMA.."
+                                        class="hover:text-white">Library Portal</a></li>
+                                <li><a href="https://elearning.aiu.edu.my/" class="hover:text-white">E-Learning
+                                        System</a></li>
+
+                                <li><a href="https://aiu.edu.my/about-aiu/" class="hover:text-white">Campus Map</a></li>
+                            </ul>
+
+                            <p class="mt-3 text-sm">
+                                Need help? <span class="text-blue-400">support@university.edu</span><br>
+                                Hotline: <span class="font-semibold">+1 (800) 123-4567</span>
+                            </p>
+                        </div>
+
+                    </div>
+
+                    <!-- Divider -->
+                    <div class="border-t border-gray-700 my-8"></div>
+
+                    <!-- Footer bottom -->
+                    <div class="max-w-7xl mx-auto px-6 text-sm text-gray-400 flex flex-wrap gap-6">
+                        <a href="#" class="hover:text-white">Terms & Conditions</a>
+                        <a href="#" class="hover:text-white">Privacy Policy</a>
+                        <a href="#" class="hover:text-white">Campus Safety</a>
+                        <a href="#" class="hover:text-white">Accessibility</a>
+                        <a href="#" class="hover:text-white">Newsletter</a>
+                    </div>
+
+                    <p class="text-center text-gray-500 text-sm mt-6">
+                        © 2025 Your University Name — All Rights Reserved.
+                    </p>
+                </footer>
+         
+
+        </section>
+
+
+
+
+
+
+        <script>
+
+            const searchInput = document.getElementById('search-input');
+            const searchTrigger = document.getElementById('search-icon-trigger');
+
+            // 2. Wrap all logic inside a single check
+
+
+            searchTrigger.addEventListener('click', () => {
+
+                searchInput.classList.toggle('search-active');
+
+
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+
+        <script>
+            const closebtn = document.getElementById("closeSidebar");
+            const sidebar = document.getElementById("sidebar");
+            const bookmark = document.getElementById("bookmark");
+
+            bookmark.addEventListener("click", () => {
+                sidebar.classList.remove("translate-x-full");
+            });
+
+            closebtn.addEventListener("click", () => {
+                sidebar.classList.add("translate-x-full");
+            });
+
+
+
+
+
+            const close_btn = document.getElementById("p_closeSidebar");
+            const profilesidebar = document.getElementById("profile_sidebar");
+            const profileicon = document.getElementById("profile-icon");
+            close_btn.addEventListener("click", () => {
+
+                console.log("hi");
+                profilesidebar.classList.add("translate-x-full");
+
+            });
+
+            profileicon.addEventListener("click", () => {
+                profilesidebar.classList.remove("hidden");
+                console.log("hi");
+                profilesidebar.classList.remove("translate-x-full");
+            })
+
+
+            document.addEventListener("DOMContentLoaded", () => {
+                const pencil = document.getElementById("pencil");
+                const nameContainer = document.getElementById("namecontainer");
+                const nameInput = document.getElementById("nameInput");
+                const saveBtn = document.getElementById("saveBtn");
+                const h3Name = nameContainer.querySelector("h3");
+
+                pencil.addEventListener("click", () => {
+                    // Show input and button
+                    nameInput.classList.remove("hidden");
+                    saveBtn.classList.remove("hidden");
+                    pencil.classList.add("hidden");
+
+                    // Fill input with current h3 text
+                    nameInput.value = h3Name.textContent.trim();
+
+                    // Hide the h3 while editing
+                    h3Name.classList.add("hidden");
+                });
+
+                saveBtn.addEventListener("click", () => {
+                    // Update h3 with new value
+                    h3Name.textContent = nameInput.value;
+
+                    // Show h3 again and hide input & button
+                    h3Name.classList.remove("hidden");
+                    nameInput.classList.add("hidden");
+                    saveBtn.classList.add("hidden");
+                    pencil.classList.remove("hidden");
+                });
+
+
+                const pencil_about = document.getElementById("pencil_about");
+                const aboutInput = document.getElementById("aboutInput");
+                const aboutBtn = document.getElementById("aboutBtn");
+                const aboutContainer = document.getElementById("aboutcontainer");
+                const h4Name = aboutContainer.querySelector("p");
+
+                pencil_about.addEventListener("click", () => {
+
+                    aboutInput.classList.remove("hidden");
+                    aboutBtn.classList.remove("hidden");
+                    pencil_about.classList.add("hidden");
+
+                    // Fill input with current h3 text
+
+                    aboutInput.value = h4Name.textContent.trim();
+                    console.log(aboutInput);
+
+                    // Hide the h3 while editing
+                    h4Name.classList.add("hidden");
+                })
+
+                aboutBtn.addEventListener("click", () => {
+                    // Update h3 with new value
+                    h4Name.textContent = aboutInput.value;
+
+                    // Show h3 again and hide input & button
+                    h4Name.classList.remove("hidden");
+                    aboutInput.classList.add("hidden");
+                    aboutBtn.classList.add("hidden");
+                    pencil_about.classList.remove("hidden");
+                });
+
+            });
+
+
+
+
+
+
+            //Right news positioning
+
+            fetch('../news_school.json')
+            .then(res => res.json())
+            .then (news_data =>{
+                const  new1_container = document.getElementById("news-one");
+                
+                const  item = news_data.news[0];
+                new1_container.innerHTML =`
+                      <div
+                                class="lastest bg-[#0c9e95] w-[160px] h-[30px]  px-2 mb-3.5 flex justify-center items-center text-amber-50">
+                                <p class="last">Lastest News</p>
+                            </div>
+                            <img src="${item.image}" class="w-full h-48 object-cover rounded-md" />
+                            <h2 class="text-xl font-bold mt-3 px-0">${item.headline}</h2>
+                            <p class="text-gray-700 mt-2 px-0 text-sm">
+                                ${item.summary}
+                            </p>
+                            <a href="#" class="mt-3 inline-block underline text-blue-600 px-0">Read more</a>
+                `
+              
+
+
+            const  new2_container = document.getElementById("news-two");
+
+            const item2 = news_data.news[1];
+            console.log(item2);
+
+             new2_container.innerHTML   =`
+                                           <div
+                                    class="lastest bg-[#0c9e95] w-[130px] h-[30px]  px-2 mb-3.5 flex justify-center items-center text-amber-50">
+                                    <p class="last text-[13px]">Lastest News</p>
+                                </div>
+                                <img src="${item2.image}" class="w-full h-32 object-cover rounded-md" />
+                                <h3 class="text-lg font-bold mt-2 px-0">${item2.headline}</h3>
+                                <p class="text-gray-700 mt-1 px-0 text-sm">${item2.summary}</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600 px-0">Read more</a>
+                `
+          
+
+        const  new3_container = document.getElementById("news-three");
+        const item3 = news_data.news[5];
+        console.log(item3);
+        new3_container.innerHTML = `
+        <div
+                                    class="lastest bg-[#0c9e95] w-[130px] h-[30px]  px-2 mb-3.5 flex justify-center items-center text-amber-50">
+                                    <p class="last text-[13px]">Lastest News</p>
+                                </div>
+                                <img src="${item3.image}" class="w-full h-32 object-cover rounded-md" />
+                                <h3 class="text-lg font-bold mt-2 px-0">${item3.headline}</h3>
+                                <p class="text-gray-700 mt-1 px-0 text-sm">${item3.summary}</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600 px-0">Read more</a>
+        `
+
+
+
+        const  new4_container = document.getElementById("news-four");
+        const item4 = news_data.news[3];
+        console.log(item4);
+        new4_container.innerHTML = `
+        <div
+                                    class="lastest bg-[#0c9e95] w-[130px] h-[30px]  px-2 mb-3.5 flex justify-center items-center text-amber-50">
+                                    <p class="last text-[13px]">Lastest News</p>
+                                </div>
+                                <img src="${item4.image}" class="w-full h-32 object-cover rounded-md" />
+                                <h3 class="text-lg font-bold mt-2 px-0">${item3.headline}</h3>
+                                <p class="text-gray-700 mt-1 px-0 text-sm">${item3.summary}</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600 px-0">Read more</a>
+        `
+
+        
+        //new4
+
+        const  new5_container = document.getElementById("news-five");
+        const item5 = news_data.news[6];
+        console.log(item5);
+        new5_container.innerHTML = `
+        <div
+                                    class="lastest bg-[#0c9e95] w-[130px] h-[30px]  px-2 mb-3.5 flex justify-center items-center text-amber-50">
+                                    <p class="last text-[13px]">Lastest News</p>
+                                </div>
+                                <img src="${item5.image}" class="w-full h-32 object-cover rounded-md" />
+                                <h3 class="text-lg font-bold mt-2 px-0">${item3.headline}</h3>
+                                <p class="text-gray-700 mt-1 px-0 text-sm">${item3.summary}</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600 px-0">Read more</a>
+        `
+
+
+
+    
+                   //new6
+
+        const  new6_container = document.getElementById("news-six");
+        const item6 = news_data.news[3];
+        console.log(item6);
+        new6_container.innerHTML = `
+        <div
+                                    class="lastest bg-[#0c9e95] w-[130px] h-[30px]  px-2 mb-3.5 flex justify-center items-center text-amber-50">
+                                    <p class="last text-[13px]">Lastest News</p>
+                                </div>
+                                <img src="${item6.image}" class="w-full h-32 object-cover rounded-md" />
+                                <h3 class="text-lg font-bold mt-2 px-0">${item6.headline}</h3>
+                                <p class="text-gray-700 mt-1 px-0 text-sm">${item6.summary}</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600 px-0">Read more</a>
+        `
+
+
+
+                   
+
+
+
+
+  });
+
+
+    //left event positioning
+
+    fetch("../upcominng_event.json")
+    .then(res => res.json())
+    .then(event_data =>{
+
+      
+        const event1 = event_data.events[0];
+        const event1_container =document.getElementById("Rc1");
+        
+        event1_container.innerHTML =`
+        
+                            <!-- Image (Left) -->
+                            <img src="${event1.image}" class="w-20 h-20 object-cover rounded-md" />
+
+                            <!-- Text (Right) -->
+                            <div class="flex flex-col">
+                                <h3 class="text-lg font-bold">${event1.event_name}</h3>
+                                <p class="text-gray-700 mt-1 text-xs">${event1.school}</p>
+                                <p class="text-sm">${event1.date}</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600">Read more</a>
+                            </div>
+        
+        `
+
+        
+        
+        const event2 = event_data.events[1];
+        const event2_container =document.getElementById("Rc2");
+        console.log(event2);
+        event2_container.innerHTML =`
+        
+                            <!-- Image (Left) -->
+                            <img src="${event2.image}" class="w-20 h-20 object-cover rounded-md" />
+
+                            <!-- Text (Right) -->
+                            <div class="flex flex-col">
+                                <h3 class="text-lg font-bold">${event2.event_name}</h3>
+                                <p class="text-gray-700 mt-1 text-xs">${event1.school}</p>
+                                <p class="text-sm">${event2.date}</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600">Read more</a>
+                            </div>
+        
+        `
+
+
+
+
+        
+    
+
+
+
+    //event 3
+
+            
+        const event3 = event_data.events[2];
+        const event3_container =document.getElementById("Rc3");
+        console.log(event2);
+        event3_container.innerHTML =`
+        
+                            <!-- Image (Left) -->
+                            <img src="${event3.image}" class="w-20 h-20 object-cover rounded-md" />
+
+                            <!-- Text (Right) -->
+                            <div class="flex flex-col">
+                                <h3 class="text-lg font-bold">${event3.event_name}</h3>
+                                <p class="text-gray-700 mt-1 text-xs">${event3.school}</p>
+                                <p class="text-sm">${event3.date}</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600">Read more</a>
+                            </div>
+        
+        `
+
+
+
+        
+    //event 4
+
+            
+        const event4 = event_data.events[3];
+        const event4_container =document.getElementById("Rc4");
+        console.log(event4);
+        event4_container.innerHTML =`
+        
+                            <!-- Image (Left) -->
+                            <img src="${event4.image}" class="w-20 h-20 object-cover rounded-md" />
+
+                            <!-- Text (Right) -->
+                            <div class="flex flex-col">
+                                <h3 class="text-lg font-bold">${event4.event_name}</h3>
+                                <p class="text-gray-700 mt-1 text-xs">${event4.school}</p>
+                                <p class="text-sm">${event4.date}</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600">Read more</a>
+                            </div>
+        
+        `
+
+
+
+
+    })
+
+            
+
+        </script>
+
+    </body>
+
+
+</html>

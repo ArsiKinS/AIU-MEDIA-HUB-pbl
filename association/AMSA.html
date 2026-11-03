@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Association.aiu</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="../index.css">
+    <link href="../output.css" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="../css/media_query.css" rel="stylesheet" type="text/css" />
+    <link href="../css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link href="../css/animate.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+    <link href="../css/owl.carousel.css" rel="stylesheet" type="text/css" />
+    <link href="../css/owl.theme.default.css" rel="stylesheet" type="text/css" />
+    <!-- Bootstrap CSS -->
+    <link href="../css/style_1.css" rel="stylesheet" type="text/css" />
+    <!-- Modernizr JS -->
+    <script src="../js/modernizr-3.5.0.min.js"></script>
+
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="logo_head">
+            <div class="logo">
+                <img src="../img/logo.jpg" alt="">
+            </div>
+            <div
+                class="nav_profile w-10 h-10 bg-[#0c9e95] text-amber-50 flex items-center justify-center cursor-pointer p-2 rounded-full hover:bg-cyan-900 transition duration-300">
+                <div class="profile-container con">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+
+                <ul>
+                    <li><a href="../dashboard.html">Dashboard</a></li>
+                    <li><a href="../logout.html">Logout</a></li>
+                </ul>
+
+            </div>
+        </div>
+
+        <nav class="nav container  w-100% flex relative">
+
+
+            <div class="nav__menus z-20 " id="nav-menu ">
+                <ul class="nav__list gap-[20px] ">
+                    <div class=" hover:bg-[#086962] w-full ">
+                        <li class="list-item"><a class="h-full text-white-600 hover:text-white transition duration-300"
+                                href="../index.html">Home</a></li>
+                    </div>
+
+
+                    <div class="">
+                        <li
+                            class="nav-item group relative border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+
+                            <a class="text-white hover:text-white transition duration-300 flex items-center gap-1 "
+                                href="../news.html">
+                                News
+                                <span class="plus group-hover:hidden">+</span>
+                                <span class="minus hidden group-hover:inline">−</span>
+
+
+                            </a>
+
+                            <!-- DROPDOWN MENU -->
+                            <ul class="absolute left-0 translate-y-0 opacity scale-95 w-[150px] top-6 hidden group-hover:flex flex-col 
+           bg-white text-black shadow-lg  pointer-events-auto
+   scale-100 transition-all duration-300 ease-out origin-top p-3 pt-4 z-50">
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">SCI</a></li>
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">SBSS</a></li>
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">SHS</a></li>
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">AIU School</a></li>
+                            </ul>
+                        </li>
+                    </div>
+
+
+
+
+
+
+
+                    <li
+                        class="nav-item group relative border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+                        <a class="text-white hover:text-white transition duration-300 flex items-center gap-1"
+                            href="../asso.html">
+                            Association
+                            <span class="plus group-hover:hidden">+</span>
+                            <span class="minus hidden group-hover:inline">−</span>
+                        </a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="absolute left-0  w-[150px] translate-y-0 top-6 hidden group-hover:flex flex-col 
+           bg-white text-black shadow-lg  p-3 pt-4 z-50">
+                            <li><a href="AMSA.html" class="px-3 py-1 hover:bg-gray-100 rounded">AMSA</a></li>
+                            <li><a href="" class="px-3 py-1 hover:bg-gray-100 rounded">ATSA</a></li>
+                            <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">YUS</a></li>
+                            <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">Nisco</a></li>
+                        </ul>
+                    </li>
+
+                    <li
+                        class="nav-item group relative  border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+                        <a class="text-white hover:text-white transition duration-300 flex items-center gap-1" href="#">
+                            Announcement
+                            <span class="plus group-hover:hidden">+</span>
+                            <span class="minus hidden group-hover:inline">−</span>
+                        </a>
+
+                        <!-- DROPDOWN MENU -->
+                        <ul class="absolute left-0  translate-y-0 w-[150px] top-6 hidden group-hover:flex flex-col 
+           bg-white text-black shadow-lg  p-3 pt-4 z-50">
+                            <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">SCI</a></li>
+                            <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">SBSS</a></li>
+                            <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">SHS</a></li>
+                            <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">AIU School</a></li>
+                        </ul>
+                    </li>
+
+                    <div
+                        class="nav__list__item  border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+                        <li class="list-item"><a class="h-full text-white-600 hover:text-white transition duration-300"
+                                href="">Contact</a></li>
+                    </div>
+
+                </ul>
+
+
+            </div>
+
+            <!-- Nav Search Bar -->
+            <div class="search_container absolute right-0 pr-[45px] cursor-pointer">
+                <input id="search-input" type="text" placeholder="Search..." class="
+                  w-0                      
+                  pl-0                      
+                  opacity-0                
+                 text-[0.8rem]           
+                  text-black
+                  rounded-full 
+                  border-none 
+                  transition-all duration-300 ease-in-out
+                  outline-0
+                  pt-1
+                  pb-1
+                  
+                 ">
+                <i class="fa-solid fa-magnifying-glass  hover:to-blue-500" id="search-icon-trigger"></i>
+            </div>
+
+
+
+        </nav>
+    </header>
+
+
+
+
+    <section>
+        <div class="w-full h-[500px] bg-blue-600">
+            <img src=" " alt="">
+
+        </div>
+
+    </section>
+
+    <div class="container-fluid paddding mb-5 mt-[15px] ">
+        <div class="row mx-0">
+            <div class="col-md-6 col-12 paddding animate-box " data-animate-effect="fadeIn">
+                <div class="fh5co_suceefh5co_height relative"><img src="img/association/Q.jpg" alt="img" />
+                    <div class="fh5co_suceefh5co_height_position_absolute"></div>
+
+                    <div class="fh5co_suceefh5co_height_position_absolute_font">
+
+                        <div class="absolute bottom-2 text-black z-20 ml-3"><a href="#" class="color_fff"> <i
+                                    class="fa fa-clock-o"></i>&nbsp;&nbsp;Dec 31,2017
+                            </a></div>
+                        <div class="absolute bottom-[-5] text-black z-20 ml-3 text-4xl"><a href="single.html"
+                                class="fh5co_good_font"> After all is said and done, more is said than done </a></div>
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-1/5 bg-gradient-to-t from-white via-white/70 to-transparent z-0">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
+                        <div class="fh5co_suceefh5co_height_2"><img src="img/association/Q.jpg" alt="img" />
+                            <div class="fh5co_suceefh5co_height_position_absolute"></div>
+                            <div class="fh5co_suceefh5co_height_position_absolute_font_2">
+                                <div class=""><a href="#" class="color_fff"> <i
+                                            class="fa fa-clock-o"></i>&nbsp;&nbsp;Oct
+                                        28,2017 </a></div>
+                                <div class=""><a href="single.html" class="fh5co_good_font_2"> After all is said and
+                                        done, <br>more is said than done </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
+                        <div class="fh5co_suceefh5co_height_2"><img src="img/association/Q.jpg" alt="img" />
+                            <div class="fh5co_suceefh5co_height_position_absolute"></div>
+                            <div class="fh5co_suceefh5co_height_position_absolute_font_2">
+                                <div class=""><a href="#" class="color_fff"> <i
+                                            class="fa fa-clock-o"></i>&nbsp;&nbsp;Oct 28,2017 </a></div>
+                                <div class=""><a href="single.html" class="fh5co_good_font_2"> After all is said and
+                                        done... </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
+                        <div class="fh5co_suceefh5co_height_2"><img src="img/association/Q.jpg" alt="img" />
+                            <div class="fh5co_suceefh5co_height_position_absolute"></div>
+                            <div class="fh5co_suceefh5co_height_position_absolute_font_2">
+                                <div class=""><a href="#" class="color_fff"> <i
+                                            class="fa fa-clock-o"></i>&nbsp;&nbsp;Oct
+                                        28,2017 </a></div>
+                                <div class=""><a href="single.html" class="fh5co_good_font_2"> After all is said and
+                                        done, more is said than done </a></div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-6 paddding animate-box" data-animate-effect="fadeIn">
+                        <div class="fh5co_suceefh5co_height_2"><img src="img/association/Q.jpg" alt="img" />
+                            <div class="fh5co_suceefh5co_height_position_absolute"></div>
+                            <div class="fh5co_suceefh5co_height_position_absolute_font_2">
+                                <div class=""><a href="#" class="color_fff"> <i
+                                            class="fa fa-clock-o"></i>&nbsp;&nbsp;Oct
+                                        28,2017 </a></div>
+                                <div class=""><a href="single.html" class="fh5co_good_font_2"> After all is said and
+                                        done, more is said... </a></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <section class="h-auto slider">
+        <div class="container-fluid pb-4 pt-5">
+            <div class="container animate-box">
+                <div>
+                    <div class="fh5co_heading fh5co_heading_border_bottom py-2 mb-4">News</div>
+                </div>
+                <div class="owl-carousel owl-theme" id="slider2">
+                    <div class="item px-2">
+                        <div class="fh5co_hover_news_img">
+                            <div class="fh5co_news_img"><img src="../img/association/Q.jpg" alt="" /></div>
+                            <div>
+                                <a href="single.html" class="d-block fh5co_small_post_heading"><span class="">The top 10
+                                        best computer speakers in the market</span></a>
+                                <div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item px-2">
+                        <div class="fh5co_hover_news_img">
+                            <div class="fh5co_news_img"><img src="../img/association/Q.jpg" alt="" /></div>
+                            <div>
+                                <a href="single.html" class="d-block fh5co_small_post_heading"><span class="">The top 10
+                                        best computer speakers in the market</span></a>
+                                <div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item px-2">
+                        <div class="fh5co_hover_news_img">
+                            <div class="fh5co_news_img"><img src="../img/association/Q.jpg" alt="" /></div>
+                            <div>
+                                <a href="single.html" class="d-block fh5co_small_post_heading"><span class="">The top 10
+                                        best computer speakers in the market</span></a>
+                                <div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item px-2">
+                        <div class="fh5co_hover_news_img">
+                            <div class="fh5co_news_img"><img src="../img/association/Q.jpg" alt="" /></div>
+                            <div>
+                                <a href="single.html" class="d-block fh5co_small_post_heading"><span class="">The top 10
+                                        best computer speakers in the market</span></a>
+                                <div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item px-2">
+                        <div class="fh5co_hover_news_img">
+                            <div class="fh5co_news_img"><img src="../img/association/Q.jpg" alt="" /></div>
+                            <div>
+                                <a href="single.html" class="d-block fh5co_small_post_heading"><span class="">The top 10
+                                        best computer speakers in the market</span></a>
+                                <div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="item px-2">
+                        <div class="fh5co_hover_news_img">
+                            <div class="fh5co_news_img"><img src="../img/association/Q.jpg" alt="" /></div>
+                            <div>
+                                <a href="single.html" class="d-block fh5co_small_post_heading"><span class="">The top 10
+                                        best computer speakers in the market</span></a>
+                                <div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <div class="container-fluid fh5co_video_news_bg pb-4">
+            <div class="container animate-box" data-animate-effect="fadeIn">
+                <div>
+                    <div class="fh5co_heading fh5co_heading_border_bottom pt-5 pb-2 mb-4  text-white">Video News</div>
+                </div>
+                <div>
+                    <div class="owl-carousel owl-theme" id="slider3">
+                        <div class="item px-2">
+                            <div class="fh5co_hover_news_img">
+                                <div class="fh5co_hover_news_img_video_tag_position_relative">
+                                    <div class="fh5co_news_img">
+                                        <iframe id="video" width="100%" height="200"
+                                            src="https://www.youtube.com/embed/aM9g4r9QUsM?rel=0&amp;showinfo=0"
+                                            frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="fh5co_hover_news_img_video_tag_position_absolute fh5co_hide">
+                                        <img src="images/ariel-lustre-208615.jpg" alt="" />
+                                    </div>
+                                    <div class="fh5co_hover_news_img_video_tag_position_absolute_1 fh5co_hide"
+                                        id="play-video">
+                                        <div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1">
+                                            <div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button">
+                                                <span><i class="fa fa-play"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <a href="#" class="d-block fh5co_small_post_heading fh5co_small_post_heading_1">
+                                        <span class="text-black">The top 10 funniest videos on YouTube </span></a>
+                                    <div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item px-2">
+                            <div class="fh5co_hover_news_img">
+                                <div class="fh5co_hover_news_img_video_tag_position_relative">
+                                    <div class="fh5co_news_img">
+                                        <iframe id="video_2" width="100%" height="200"
+                                            src="https://www.youtube.com/embed/aM9g4r9QUsM?rel=0&amp;showinfo=0"
+                                            frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="fh5co_hover_news_img_video_tag_position_absolute fh5co_hide_2">
+                                        <img src="images/39-324x235.jpg" alt="" />
+                                    </div>
+                                    <div class="fh5co_hover_news_img_video_tag_position_absolute_1 fh5co_hide_2"
+                                        id="play-video_2">
+                                        <div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1">
+                                            <div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button">
+                                                <span><i class="fa fa-play"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <a href="#" class="d-block fh5co_small_post_heading fh5co_small_post_heading_1">
+                                        <span class="text-black">The top 10 embedded YouTube videos this
+                                            month</span></a>
+                                    <div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item px-2">
+                            <div class="fh5co_hover_news_img">
+                                <div class="fh5co_hover_news_img_video_tag_position_relative">
+                                    <div class="fh5co_news_img">
+                                        <iframe id="video_3" width="100%" height="200"
+                                            src="https://www.youtube.com/embed/aM9g4r9QUsM?rel=0&amp;showinfo=0"
+                                            frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="fh5co_hover_news_img_video_tag_position_absolute fh5co_hide_3">
+                                        <img src="images/joe-gardner-75333.jpg" alt="" />
+                                    </div>
+                                    <div class="fh5co_hover_news_img_video_tag_position_absolute_1 fh5co_hide_3"
+                                        id="play-video_3">
+                                        <div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1">
+                                            <div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button">
+                                                <span><i class="fa fa-play"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <a href="#" class="d-block fh5co_small_post_heading fh5co_small_post_heading_1">
+                                        <span class="text-black">The top 10 best computer speakers in the
+                                            market</span></a>
+                                    <div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="item px-2">
+                            <div class="fh5co_hover_news_img">
+                                <div class="fh5co_hover_news_img_video_tag_position_relative">
+                                    <div class="fh5co_news_img">
+                                        <iframe id="video_4" width="100%" height="200"
+                                            src="https://www.youtube.com/embed/aM9g4r9QUsM?rel=0&amp;showinfo=0"
+                                            frameborder="0" allowfullscreen></iframe>
+                                    </div>
+                                    <div class="fh5co_hover_news_img_video_tag_position_absolute fh5co_hide_4">
+                                        <img src="images/vil-son-35490.jpg" alt="" />
+                                    </div>
+                                    <div class="fh5co_hover_news_img_video_tag_position_absolute_1 fh5co_hide_4"
+                                        id="play-video_4">
+                                        <div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button_1">
+                                            <div class="fh5co_hover_news_img_video_tag_position_absolute_1_play_button">
+                                                <span><i class="fa fa-play"></i></span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="pt-2">
+                                    <a href="#" class="d-block fh5co_small_post_heading fh5co_small_post_heading_1">
+                                        <span class="">The top 10 best computer speakers in the market</span></a>
+                                    <div class="c_g"><i class="fa fa-clock-o"></i> Oct 16,2017</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="footer">
+        <footer class="bg-[#0d2c6c] text-gray-300 py-12 mt-20 p-10">
+            <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-10">
+
+                <!-- University Contact -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Contact University News Desk</h3>
+                    <p>Email us at <span class="font-semibold">news@university.edu</span></p>
+                    <p>Available 9 AM – 5 PM</p>
+                    <a href="#" class="text-blue-400 hover:text-blue-300 block mt-2">Submit a Story</a>
+                    <a href="#" class="text-blue-400 hover:text-blue-300">Media Inquiries</a>
+                </div>
+
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Latest News</a></li>
+                        <li><a href="#" class="hover:text-white">Campus Announcements</a></li>
+                        <li><a href="#" class="hover:text-white">Events & Activities</a></li>
+                        <li><a href="#" class="hover:text-white">Student Achievements</a></li>
+                        <li><a href="#" class="hover:text-white">Research Highlights</a></li>
+                    </ul>
+                </div>
+
+                <!-- About the University -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">About the University</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">University Overview</a></li>
+                        <li><a href="#" class="hover:text-white">Academic Faculties</a></li>
+                        <li><a href="#" class="hover:text-white">Campus Life</a></li>
+                        <li><a href="#" class="hover:text-white">Admissions</a></li>
+                        <li><a href="#" class="hover:text-white">Career Opportunities</a></li>
+                    </ul>
+                </div>
+
+                <!-- Student Services -->
+                <div>
+                    <h3 class="text-white font-semibold mb-4">Student Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="hover:text-white">Library Portal</a></li>
+                        <li><a href="#" class="hover:text-white">E-Learning System</a></li>
+                        <li><a href="#" class="hover:text-white">Student Portal</a></li>
+                        <li><a href="#" class="hover:text-white">Counseling Services</a></li>
+                        <li><a href="#" class="hover:text-white">Campus Map</a></li>
+                    </ul>
+
+                    <p class="mt-3 text-sm">
+                        Need help? <span class="text-blue-400">support@university.edu</span><br>
+                        Hotline: <span class="font-semibold">+1 (800) 123-4567</span>
+                    </p>
+                </div>
+
+            </div>
+
+            <!-- Divider -->
+            <div class="border-t border-gray-700 my-8"></div>
+
+            <!-- Footer bottom -->
+            <div class="max-w-7xl mx-auto px-6 text-sm text-gray-400 flex flex-wrap gap-6">
+                <a href="#" class="hover:text-white">Terms & Conditions</a>
+                <a href="#" class="hover:text-white">Privacy Policy</a>
+                <a href="#" class="hover:text-white">Campus Safety</a>
+                <a href="#" class="hover:text-white">Accessibility</a>
+                <a href="#" class="hover:text-white">Newsletter</a>
+            </div>
+
+            <p class="text-center text-gray-500 text-sm mt-6">
+                © 2025 Your University Name — All Rights Reserved.
+            </p>
+        </footer>
+    </section>
+
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="../js/owl.carousel.min.js"></script>
+    <!--<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"
+        integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"
+        integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn"
+        crossorigin="anonymous"></script>
+    <!-- Waypoints -->
+    <script src="../js/jquery.waypoints.min.js"></script>
+    <!-- Main -->
+    <script src="../js/main.js"></script>
+
+</body>
+
+
+
+</html>

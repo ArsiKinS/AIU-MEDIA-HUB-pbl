@@ -1,0 +1,115 @@
+{
+  "title": "Upcoming Events",
+  "events": [
+    {
+      "id": 1,
+      "event_name": "SCI Industry Talk: Future of Artificial Intelligence",
+      "school": "School of Computing and Informatics",
+      "date": "2026-02-10",
+      "time": "10:00 AM – 12:00 PM",
+      "venue": "AIU Main Auditorium",
+      "image": "../img/SBSS/1.jpg",
+      "description": "An industry talk focusing on the latest trends and career opportunities in artificial intelligence.",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "event_name": "SBSS Entrepreneurship Workshop",
+      "school": "School of Business and Social Sciences",
+      "date": "2026-02-15",
+      "time": "2:00 PM – 5:00 PM",
+      "venue": "SBSS Seminar Room",
+      "image": "../img/SBSS/4.jpg",
+      "description": "A hands-on workshop designed to develop entrepreneurial thinking and business skills among students.",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "event_name": "SEHS Community Engagement Program",
+      "school": "School of Education and Human Sciences",
+      "date": "2026-02-20",
+      "time": "9:00 AM – 1:00 PM",
+      "venue": "Alor Setar Community Center",
+      "image": "../img/SBSS/5.jpg",
+      "description": "Students will participate in community-based activities to promote education and social awareness.",
+      "link": "#"
+    },
+    {
+      "id": 4,
+      "event_name": "AIU International School Cultural Day",
+      "school": "AIU International School",
+      "date": "2026-02-25",
+      "time": "8:30 AM – 3:00 PM",
+      "venue": "AIU Sports Complex",
+      "image": "../img/SBSS/5.jpg",
+      "description": "A celebration of cultural diversity featuring performances, food stalls, and exhibitions.",
+      "link": "#"
+    },
+    {
+      "id": 5,
+      "event_name": "AIU Career and Internship Fair",
+      "school": "Albukhary International University",
+      "date": "2026-03-03",
+      "time": "9:00 AM – 4:00 PM",
+      "venue": "AIU Convention Hall",
+      "image": "../img/events/career_fair.jpg",
+      "description": "An opportunity for students to connect with employers and explore internship and career options.",
+      "link": "#"
+    },
+    {
+      "id": 6,
+      "event_name": "SCI Coding Bootcamp",
+      "school": "School of Computing and Informatics",
+      "date": "2026-03-08",
+      "time": "10:00 AM – 4:00 PM",
+      "venue": "SCI Computer Lab",
+      "image": "../img/events/coding_bootcamp.jpg",
+      "description": "An intensive coding bootcamp aimed at strengthening programming and problem-solving skills.",
+      "link": "#"
+    },
+    {
+      "id": 7,
+      "event_name": "SBSS Public Lecture on Social Innovation",
+      "school": "School of Business and Social Sciences",
+      "date": "2026-03-12",
+      "time": "11:00 AM – 1:00 PM",
+      "venue": "AIU Lecture Theatre 2",
+      "image": "../img/events/social_innovation.jpg",
+      "description": "A public lecture discussing the role of social innovation in addressing global challenges.",
+      "link": "#"
+    },
+    {
+      "id": 8,
+      "event_name": "SEHS Teaching Practicum Briefing",
+      "school": "School of Education and Human Sciences",
+      "date": "2026-03-18",
+      "time": "2:00 PM – 4:00 PM",
+      "venue": "SEHS Conference Room",
+      "image": "../img/events/practicum_briefing.jpg",
+      "description": "An official briefing session for students preparing for their teaching practicum.",
+      "link": "#"
+    },
+    {
+      "id": 9,
+      "event_name": "AIU Sports and Wellness Day",
+      "school": "Albukhary International University",
+      "date": "2026-03-22",
+      "time": "7:30 AM – 12:00 PM",
+      "venue": "AIU Sports Ground",
+      "image": "../img/events/sports_day.jpg",
+      "description": "A university-wide event promoting physical fitness, wellness, and teamwork.",
+      "link": "#"
+    },
+    {
+      "id": 10,
+      "event_name": "AIU Research and Innovation Exhibition",
+      "school": "Albukhary International University",
+      "date": "2026-03-28",
+      "time": "9:00 AM – 5:00 PM",
+      "venue": "AIU Exhibition Hall",
+      "image": "../img/events/research_expo.jpg",
+      "description": "An exhibition showcasing student and faculty research projects and innovative ideas.",
+      "link": "#"
+    }
+  ]
+}

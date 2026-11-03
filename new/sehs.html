@@ -1,0 +1,417 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AIU NEWS</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="../index.css">
+    <link href="./output.css" rel="stylesheet">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+
+<body>
+
+    <body>
+        <!--=============== HEADER ===============-->
+        <header class="header  bg-white fixed top-0 left-0 w-full z-50">
+            <div class="logo_head">
+                <div class="logo">
+                    <img src="../img/logo.jpg" alt="">
+                </div>
+                <div
+                    class="nav_profile w-10 h-10 bg-[#0c9e95] text-amber-50 flex items-center justify-center cursor-pointer p-2 rounded-full hover:bg-cyan-900 transition duration-300">
+                    <div class="profile-container con">
+                        <i class="fa-solid fa-user"></i>
+                    </div>
+
+                    <ul>
+                        <li><a href="dashboard.html">Dashboard</a></li>
+                        <li><a href="logout.html">Logout</a></li>
+                    </ul>
+
+                </div>
+            </div>
+
+            <nav class="nav container  w-100% flex relative">
+
+
+                <div class="nav__menus z-20 " id="nav-menu ">
+                    <ul class="nav__list gap-[20px] ">
+                        <div class=" hover:bg-[#086962] w-full ">
+                            <li class="list-item"><a
+                                    class="h-full text-white-600 hover:text-white transition duration-300"
+                                    href="../index.html">Home</a></li>
+                        </div>
+
+
+                        <div class="">
+                            <li
+                                class="nav-item group relative border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+
+                                <a class="text-white hover:text-white transition duration-300 flex items-center gap-1 "
+                                    href="news.html">
+                                    News
+                                    <span class="plus group-hover:hidden">+</span>
+                                    <span class="minus hidden group-hover:inline">−</span>
+
+
+                                </a>
+
+                                <!-- DROPDOWN MENU -->
+                                <ul class="absolute left-0 translate-y-0 opacity scale-95 w-[150px] top-6 hidden group-hover:flex flex-col 
+           bg-white text-black shadow-lg  pointer-events-auto
+   scale-100 transition-all duration-300 ease-out origin-top p-3 pt-4 z-50">
+                                    <li><a href="sci.html" class="px-3 py-1 hover:bg-gray-100 rounded">SCI</a></li>
+                                    <li><a href="sbss.html" class="px-3 py-1 hover:bg-gray-100 rounded">SBSS</a></li>
+                                    <li><a href="sehs.html" class="px-3 py-1 hover:bg-gray-100 rounded">SEHS</a></li>
+                                    <li><a href="inter_school.html" class="px-3 py-1 hover:bg-gray-100 rounded">AIU
+                                            International School</a></li>
+                                </ul>
+                            </li>
+                        </div>
+
+
+
+
+
+
+
+                        <li
+                            class="nav-item group relative border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+                            <a class="text-white hover:text-white transition duration-300 flex items-center gap-1"
+                                href="../asso.html">
+                                Association
+                                <!--
+                                <span class="plus group-hover:hidden">+</span>
+                                <span class="minus hidden group-hover:inline">−</span>
+                                -->
+                            </a>
+
+                            <!-- DROPDOWN MENU 
+                            <ul class="absolute left-0  w-[150px] translate-y-0 top-6 hidden group-hover:flex flex-col 
+           bg-white text-black shadow-lg  p-3 pt-4 z-50">
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">AMSA</a></li>
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">ATSA</a></li>
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">YSU</a></li>
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">Nisco</a></li>
+                            </ul>
+                            -->
+                        </li>
+
+                        <li
+                            class="nav-item group relative  border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+                            <a class="text-white hover:text-white transition duration-300 flex items-center gap-1"
+                                href="#">
+                                Announcement
+                                <span class="plus group-hover:hidden">+</span>
+                                <span class="minus hidden group-hover:inline">−</span>
+                            </a>
+
+                            <!-- DROPDOWN MENU -->
+                            <ul class="absolute left-0  translate-y-0 w-[150px] top-6 hidden group-hover:flex flex-col 
+           bg-white text-black shadow-lg  p-3 pt-4 z-50">
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">SCI</a></li>
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">SBSS</a></li>
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">SHS</a></li>
+                                <li><a href="#" class="px-3 py-1 hover:bg-gray-100 rounded">AIU School</a></li>
+                            </ul>
+                        </li>
+
+                        <div
+                            class="nav__list__item  border-l-[0.5px] border-white h-full pl-[15px] hover:bg-[#086962] w-full">
+                            <li class="list-item"><a
+                                    class="h-full text-white-600 hover:text-white transition duration-300"
+                                    href="../contact/contact.html">Contact</a></li>
+                        </div>
+
+                    </ul>
+
+
+                </div>
+
+                <!-- Nav Search Bar -->
+                <div class="search_container absolute right-0 pr-[45px] cursor-pointer">
+                    <input id="search-input" type="text" placeholder="Search..." class="
+                  w-0                      
+                  pl-0                      
+                  opacity-0                
+                 text-[0.8rem]           
+                  text-black
+                  rounded-full 
+                  border-none 
+                  transition-all duration-300 ease-in-out
+                  outline-0
+                  pt-1
+                  pb-1
+                  
+                 ">
+                    <i class="fa-solid fa-magnifying-glass  hover:to-blue-500" id="search-icon-trigger"></i>
+                </div>
+
+
+
+            </nav>
+        </header>
+
+
+
+<section class="relative mt-[50px] h-[600px] w-full overflow-hidden">
+
+  <!-- Background Image -->
+  <img 
+    src="../img/sci/main.jpg" 
+    alt="" 
+    class="absolute inset-0 h-full w-full object-cover scale-110 blur-sm"
+  />
+
+  <!-- Animated Gradient Overlay -->
+  <div class="absolute inset-0 gradient-animate"></div>
+
+  <!-- Content -->
+  <div class="relative z-10 flex h-full flex-col items-center justify-center text-center px-4">
+
+    <h1 class="hero-text text-5xl md:text-6xl lg:text-7xl font-bold text-white mb-6 leading-tight">
+   School of Education and <br> Human Sciences
+    </h1>
+
+    <div class="line-animate h-[6px] bg-[#64b12b] rounded-full"></div>
+
+  </div>
+
+</section>
+        <section class="section-2-1 w-full bg-[#dbffd3] h-[900px] pb-0">
+            <div class="general-container pl-[53px]  pr-[53px] pt-[20] w-full flex justify-between gap-3">
+
+                <!-- LEFT SIDE — WEEKLY (70%) -->
+                <div class="weekly-content w-[70%] h-lvh  mt-[30px] ">
+
+                    <div class="news-container w-full flex flex-col gap-3 ">
+
+                        <!-- News One -->
+                        <div class="news-one px-4 h-[400px] max-h-auto  bg-white py-4 px-0 rounded-lg shadow ">
+                            <div
+                                class="lastest bg-[#0c9e95] w-[230px] h-[30px]  px-2 mb-3.5 flex justify-center items-center text-amber-50">
+                                <p class="last">School of Education</p>
+                            </div>
+                            <img src="your-image.jpg" class="w-full h-48 object-cover rounded-md" />
+                            <h2 class="text-xl font-bold mt-3 px-0">Weekly Highlight Title</h2>
+                            <p class="text-gray-700 mt-2 px-0">
+                                This is a short description for the weekly highlight content. Add more text if needed.
+                            </p>
+                            <a href="#" class="mt-3 inline-block underline text-blue-600 px-0">Read more</a>
+                        </div>
+
+                        <!-- News 2 & 3 -->
+                        <div class="news-2-3-container grid grid-cols-2 gap-3 mt-[20px] ">
+
+                            <!-- News Two -->
+                            <div class="news-two bg-white py-4 px-0 rounded-lg shadow px-4">
+                                <div
+                                    class="lastest bg-[#0c9e95] w-[130px] h-[30px]  px-2 mb-3.5 flex justify-center items-center text-amber-50">
+                                    <p class="last text-[13px]">Lastest News</p>
+                                </div>
+                                <img src="your-image.jpg" class="w-full h-32 object-cover rounded-md" />
+                                <h3 class="text-lg font-bold mt-2 px-0">News Two Title</h3>
+                                <p class="text-gray-700 mt-1 px-0">Short description for news two.</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600 px-0">Read more</a>
+                            </div>
+
+                            <!-- News Three -->
+                            <div class="news-three bg-white py-4 px-0 rounded-lg shadow px-4">
+                                <div
+                                    class="lastest bg-[#0c9e95] w-[130px] h-[30px]  px-2 mb-3.5 flex justify-center items-center text-amber-50">
+                                    <p class="last text-[13px]">Lastest News</p>
+                                </div>
+                                <img src="your-image.jpg" class="w-full h-32 object-cover rounded-md" />
+                                <h3 class="text-lg font-bold mt-2 px-0">News Three Title</h3>
+                                <p class="text-gray-700 mt-1 px-0">Short description for news three.</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600 px-0">Read more</a>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- RIGHT SIDE — LAST WEEK (30%) -->
+                <div class="last-week-content  mt-[30px] w-[30%] h-lvh ">
+                    <div class="event-title w-[180px] bg-[#0c9e95] ">
+                        <p class=" w-[180px] h-[30px]  px-2 mb-3.5 text-amber-50 flex justify-center items-center ">Up
+                            Coming Event</p>
+                    </div>
+                    <div class="last-week-contents flex flex-col gap-4">
+
+                        <!-- Content 1 -->
+                        <div class="content-item bg-white py-4 px-0 rounded-lg shadow flex gap-3 items-start px-3">
+
+                            <!-- Image (Left) -->
+                            <img src="your-image.jpg" class="w-20 h-20 object-cover rounded-md" />
+
+                            <!-- Text (Right) -->
+                            <div class="flex flex-col">
+                                <h3 class="text-lg font-bold">Last Week Title 1</h3>
+                                <p class="text-gray-700 mt-1">Short description for last week content.</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600">Read more</a>
+                            </div>
+
+                        </div>
+
+                        <!-- Content 2 -->
+                        <div class="content-item bg-white py-4 px-0 rounded-lg shadow flex gap-3 items-start px-3">
+
+                            <img src="your-image.jpg" class="w-20 h-20 object-cover rounded-md" />
+
+                            <div class="flex flex-col">
+                                <h3 class="text-lg font-bold">Last Week Title 2</h3>
+                                <p class="text-gray-700 mt-1">Short description for last week content.</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600">Read more</a>
+                            </div>
+
+                        </div>
+
+                        <!-- Content 3 -->
+                        <div class="content-item bg-white py-4 px-0 rounded-lg shadow flex gap-3 items-start px-3">
+
+                            <img src="your-image.jpg" class="w-20 h-20 object-cover rounded-md" />
+
+                            <div class="flex flex-col">
+                                <h3 class="text-lg font-bold">Last Week Title 3</h3>
+                                <p class="text-gray-700 mt-1">Short description for last week content.</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600">Read more</a>
+                            </div>
+
+                        </div>
+
+                        <!-- Content 4 -->
+                        <div class="content-item bg-white py-4 px-0 rounded-lg shadow flex gap-3 items-start px-3">
+
+                            <img src="your-image.jpg" class="w-20 h-20 object-cover rounded-md" />
+
+                            <div class="flex flex-col">
+                                <h3 class="text-lg font-bold">Last Week Title 3</h3>
+                                <p class="text-gray-700 mt-1">Short description for last week content.</p>
+                                <a href="#" class="mt-2 inline-block underline text-blue-600">Read more</a>
+                            </div>
+
+                        </div>
+
+
+
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="footer">
+            <footer class="bg-[#0d2c6c] text-gray-300 py-12  p-10">
+                <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 ">
+
+                    <!-- University Contact -->
+                    <div>
+                        <h3 class="text-white font-semibold mb-4">Contact University News Desk</h3>
+                        <p>Email us at <span class="font-semibold">news@university.edu</span></p>
+                        <p>Available 9 AM – 5 PM</p>
+                        <a href="#" class="text-blue-400 hover:text-blue-300 block mt-2">Submit a Story</a>
+                        <a href="#" class="text-blue-400 hover:text-blue-300">Media Inquiries</a>
+                    </div>
+
+                    <!-- Quick Links -->
+                    <div>
+                        <h3 class="text-white font-semibold mb-4">Quick Links</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-white">Latest News</a></li>
+                            <li><a href="#" class="hover:text-white">Campus Announcements</a></li>
+                            <li><a href="#" class="hover:text-white">Events & Activities</a></li>
+                            <li><a href="#" class="hover:text-white">Student Achievements</a></li>
+                            <li><a href="#" class="hover:text-white">Research Highlights</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- About the University -->
+                    <div>
+                        <h3 class="text-white font-semibold mb-4">About the University</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-white">University Overview</a></li>
+                            <li><a href="#" class="hover:text-white">Academic Faculties</a></li>
+                            <li><a href="#" class="hover:text-white">Campus Life</a></li>
+                            <li><a href="#" class="hover:text-white">Admissions</a></li>
+                            <li><a href="#" class="hover:text-white">Career Opportunities</a></li>
+                        </ul>
+                    </div>
+
+                    <!-- Student Services -->
+                    <div>
+                        <h3 class="text-white font-semibold mb-4">Student Services</h3>
+                        <ul class="space-y-2">
+                            <li><a href="#" class="hover:text-white">Library Portal</a></li>
+                            <li><a href="#" class="hover:text-white">E-Learning System</a></li>
+                            <li><a href="#" class="hover:text-white">Student Portal</a></li>
+                            <li><a href="#" class="hover:text-white">Counseling Services</a></li>
+                            <li><a href="#" class="hover:text-white">Campus Map</a></li>
+                        </ul>
+
+                        <p class="mt-3 text-sm">
+                            Need help? <span class="text-blue-400">support@university.edu</span><br>
+                            Hotline: <span class="font-semibold">+1 (800) 123-4567</span>
+                        </p>
+                    </div>
+
+                </div>
+
+                <!-- Divider -->
+                <div class="border-t border-gray-700 my-8"></div>
+
+                <!-- Footer bottom -->
+                <div class="max-w-7xl mx-auto px-6 text-sm text-gray-400 flex flex-wrap gap-6">
+                    <a href="#" class="hover:text-white">Terms & Conditions</a>
+                    <a href="#" class="hover:text-white">Privacy Policy</a>
+                    <a href="#" class="hover:text-white">Campus Safety</a>
+                    <a href="#" class="hover:text-white">Accessibility</a>
+                    <a href="#" class="hover:text-white">Newsletter</a>
+                </div>
+
+                <p class="text-center text-gray-500 text-sm mt-6">
+                    © 2025 Your University Name — All Rights Reserved.
+                </p>
+            </footer>
+        </section>
+
+
+
+
+
+
+        <script>
+
+            const searchInput = document.getElementById('search-input');
+            const searchTrigger = document.getElementById('search-icon-trigger');
+
+            // 2. Wrap all logic inside a single check
+
+
+            searchTrigger.addEventListener('click', () => {
+
+                searchInput.classList.toggle('search-active');
+
+
+            });
+        </script>
+
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+            crossorigin="anonymous"></script>
+
+    </body>
+
+</html>

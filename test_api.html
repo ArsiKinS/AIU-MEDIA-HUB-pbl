@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>API Test</title>
+</head>
+<body>
+    <h1>API Response Test</h1>
+    <div id="result"></div>
+    
+    <script>
+        fetch('API/getContent.php')
+            .then(r => r.text())
+            .then(text => {
+                document.getElementById('result').innerHTML = 
+                    `<h3>Raw Response:</h3>
+                    <textarea style="width:100%; height:300px; font-family:monospace;">${text}</textarea>
+                    <h3>Parsed JSON:</h3>
+                    <pre style="background:#f0f0f0; padding:10px;">${JSON.stringify(JSON.parse(text), null, 2)}</pre>`;
+            })
+            .catch(e => {
+                document.getElementById('result').innerHTML = `Error: ${e.message}`;
+            });
+    </script>
+</body>
+</html>

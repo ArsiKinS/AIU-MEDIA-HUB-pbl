@@ -1,0 +1,104 @@
+{
+  "title": "Official AIU School Notices and Announcements",
+  "news": [
+    {
+      "id": 1,
+      "school": "School of Computing and Informatics",
+      "label": "SCI Latest News",
+      "image": "../img/SCI/1.jpg",
+      "headline": "AIU SCI Launches Khit Ta and Programmatrix",
+      "summary": "ALOR SETAR, 15 December 2025 – The School of Computing and Informatics (SCI) officially launched Khit Ta and Programmatrix to enhance digital learning and student engagement.",
+      "link": "#"
+    },
+    {
+      "id": 2,
+      "school": "School of Computing and Informatics",
+      "label": "SCI Announcement",
+      "image": "../img/SCI/2.jpg",
+      "headline": "SCI Industry Talk on Data Science",
+      "summary": "ALOR SETAR, 10 January 2026 – SCI organized an industry talk focusing on data science trends and career pathways for computing students.",
+      "link": "#"
+    },
+    {
+      "id": 3,
+      "school": "School of Business and Social Sciences",
+      "label": "SBSS Latest News",
+      "image": "../img/SCI/2.jpg",
+      "headline": "SBSS Hosts Entrepreneurship Workshop",
+      "summary": "ALOR SETAR, 8 January 2026 – The School of Business and Social Sciences conducted a workshop on entrepreneurship and social innovation.",
+      "link": "#"
+    },
+    {
+      "id": 4,
+      "school": "School of Business and Social Sciences",
+      "label": "SBSS Announcement",
+      "image": "../img/SBSS/2.jpg",
+      "headline": "SBSS Mid-Semester Academic Briefing",
+      "summary": "ALOR SETAR, 5 January 2026 – SBSS held a briefing session to inform students about academic progress and assessment guidelines.",
+      "link": "#"
+    },
+    {
+      "id": 5,
+      "school": "School of Education and Human Sciences",
+      "label": "SEHS Latest News",
+      "image": "../img/SBSS/3.jpg",
+      "headline": "SEHS Community Engagement Program",
+      "summary": "ALOR SETAR, 20 December 2025 – SEHS students participated in a community engagement program focusing on education and social awareness.",
+      "link": "#"
+    },
+    {
+      "id": 6,
+      "school": "School of Education and Human Sciences",
+      "label": "SEHS Announcement",
+      "image": "../img/SBSS/4.jpg",
+      "headline": "SEHS Teaching Practicum Briefing",
+      "summary": "ALOR SETAR, 6 January 2026 – A practicum briefing was conducted to guide students on teaching placements and expectations.",
+      "link": "#"
+    },
+    {
+      "id": 7,
+      "school": "AIU International School",
+      "label": "International School News",
+      "image": "../img/SBSS/5.jpg",
+      "headline": "AIU International School Cultural Day",
+      "summary": "ALOR SETAR, 18 December 2025 – AIU International School celebrated Cultural Day to promote diversity and global understanding.",
+      "link": "#"
+    },
+    {
+      "id": 8,
+      "school": "AIU International School",
+      "label": "International School Announcement",
+      "image": "../img/SBSS/7.jpg",
+      "headline": "International School Academic Calendar Update",
+      "summary": "ALOR SETAR, 4 January 2026 – The academic calendar for AIU International School has been updated for the upcoming term.",
+      "link": "#"
+    },
+    {
+      "id": 9,
+      "school": "Albukhary International University",
+      "label": "University Notice",
+      "image": "../img/AIU/1.jpg",
+      "headline": "AIU Semester Registration Notice",
+      "summary": "ALOR SETAR, 2 January 2026 – Students are reminded to complete semester registration within the given timeline.",
+      "link": "#"
+    },
+    {
+      "id": 10,
+      "school": "Albukhary International University",
+      "label": "University Announcement",
+      "image": "../img/AIU/2.jpg",
+      "headline": "AIU Library Extended Hours",
+      "summary": "ALOR SETAR, 28 December 2025 – The AIU Library will extend its operating hours to support students during assessment periods.",
+      "link": "#"
+    },
+    {
+      "id": 11,
+      "school": "Albukhary International University",
+      "label": "Official Notice",
+      "image": "img/SCI/1.png",
+      "headline": "AIU Public Holiday Announcement",
+      "summary": "ALOR SETAR, 24 December 2025 – The university will be closed in observance of the upcoming public holiday.",
+      "link": "#"
+    }
+  ]
+}

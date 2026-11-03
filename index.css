@@ -1,0 +1,677 @@
+/*=============== GOOGLE FONTS ===============*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+/*=============== VARIABLES CSS ===============*/
+:root {
+  --header-height: 3.5rem;
+  /*========== Colors ==========*/
+  /*Color mode HSL(hue, saturation, lightness)*/
+  --first-color: hsl(220, 68%, 54%);
+  --first-color-lighten: hsl(220, 68%, 97%);
+  --title-color: hsl(220, 48%, 28%);
+  --text-color: hsl(220, 12%, 45%);
+  --body-color: hsl(220, 100%, 99%);
+  /*========== Font and typography ==========*/
+  /*.5rem = 8px | 1rem = 16px ...*/
+  --body-font: "Poppins", sans-serif;
+  --normal-font-size: .938rem;
+  --small-font-size: .813rem;
+  --smaller-font-size: .75rem;
+  /*========== Font weight ==========*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  /*========== z index ==========*/
+  --z-tooltip: 10;
+  --z-fixed: 100;
+
+ /* Green -  #64b12b
+    Blue - #0c9e95
+    dark blue -#0d1849
+  */
+
+    /* Gaps / Spacing */
+    --gap: 20px;              /* default gap */
+    --gap-small: 10px;        /* smaller spacing */
+    --gap-large: 40px;        /* larger spacing */
+    /* Colors */
+    --color-primary: #007bff;
+    --color-primary-dark: #0056b3;
+    --color-secondary: #f5f5f5;
+    --color-text: #333;
+    --color-text-light: #777;
+    --color-background: #fff;
+
+    /* Fonts */
+    --font-base: 'Arial', sans-serif;
+    --font-heading: 'Segoe UI', sans-serif;
+
+    /* Font sizes */
+    --fs-small: 0.8rem;
+    --fs-base: 1rem;
+    --fs-large: 1.2rem;
+    --fs-xlarge: 1.5rem;
+
+    /* Border radius */
+    --radius-small: 5px;
+    --radius-base: 10px;
+    --radius-large: 20px;
+
+    /* Shadows */
+    --shadow-light: 0 2px 6px rgba(0,0,0,0.1);
+    --shadow-medium: 0 4px 12px rgba(0,0,0,0.15);
+}
+
+
+@media screen and (min-width: 1024px) {
+  :root {
+    --normal-font-size: 1rem;
+    --small-font-size: .875rem;
+    --smaller-font-size: .813rem;
+  }
+}
+
+/*=============== BASE ===============*/
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  background-color: var(--body-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
+/* logo  */
+/* --- MODIFIED CSS --- */
+
+.logo_head{
+  display: flex;
+  justify-content: space-between;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin-left: 35px;
+  margin-bottom: 0;
+}
+
+.logo{
+  /* The parent div is currently 100% width, but its children are positioned absolutely. */
+  /* This rule doesn't directly control the *image* size. */
+  width: 100%;
+  height: 100%;
+}
+
+.logo img{
+  /* These are the values you need to change. */
+  /* Reduced from 150px/70px to 120px/60px */
+  width: 100px; 
+  height: 50px;
+
+   /* Note: Absolute positioning often makes styling trickier. */
+}
+
+.nav.container{
+  /* 1. Set a defined width (must be less than 100% of the parent) */
+  width: 100%; 
+  
+  /* 2. Center the block element horizontally */
+ 
+  
+  /* --- Keep existing styles for internal content alignment --- */
+  height: 50px;
+  flex-direction: row;
+  justify-content: start; /* Aligns content inside to the left */
+  align-items: center; 
+  background-color: #0c9e95;
+  color:white;
+  padding-left: 45px;
+
+}
+.nav_profile ul{
+  display: none;
+}
+
+.nav__menu{
+  padding-bottom: 0px;
+}
+.nav__menu ul{
+  
+}
+
+
+.nav__list__item  li{ 
+    /* Use 'li' or your specific class like '.dropdown__item' if needed */
+    position: relative; /* CRITICAL: Allows the absolute positioning of the ::after element */
+    
+    /* Give some space on the right so the divider doesn't touch the next item */
+    padding-right: 2rem; /* Adjust this value as needed */
+
+    border-right: 0.6px solid #fff;
+}
+.nav__list__item  li:hover{
+  background-color:#086962;
+}
+.nav__list__item a{
+  padding-left: 0.5rem;
+  height: 100%;
+}
+/*===============Nav Search ===============*/
+.search-active{
+    width: 12rem !important;
+    opacity: 1 !important;
+    padding-left: 0.75rem !important;
+    padding-right: 2.5rem !important; 
+    margin-right: 1rem !important; 
+    
+    
+}
+
+/*===============Section 1 ===============*/
+
+.popular{
+  width:100%;
+  height:100%;
+  
+}
+.carousel-item {
+    position: relative;
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: linear-gradient(
+        to top,
+        rgba(251, 251, 251, 1) 20%,   /* bottom half solid */
+        rgba(251, 251, 251, 0) 70%   /* top fades to transparent */
+    );
+    z-index: 1; /* overlay behind the text but above the image */
+}
+
+.carousel-inner img{
+    height: 450px;
+    object-fit: cover;
+    
+}
+.carousel-caption {
+    position: absolute;
+    z-index: 2 !important; 
+    color:black;
+    bottom:10px;
+}
+.carousel-caption h5{
+  font-size: 40px;
+}
+.carousel-caption p{
+  font-size:20px;
+}
+
+/* section2 */
+.section2{
+  width: 100%;
+   /* optional spacing */
+   height: auto;
+   color:white;
+  
+   
+}
+
+.section2 h1{
+  color: white;
+}
+
+/* Category  */
+
+.category_button{
+  background:green;
+  color:white;
+  display:inline-block;
+  padding: 0.5rem 1rem;
+  border-radius: 25px;
+  font-size: 0.8rem;
+  text-align: center;
+  margin-bottom: var(--gap);
+}
+
+
+
+/*================= General Post =================  */
+:root {
+    --gap: 20px;
+}
+
+.section2 {
+    padding: 40px 20px;
+    background-color: white;
+    font-family: Arial, sans-serif;
+    width: 100%;
+    max-width: 1500px;
+    margin: auto;
+    margin-top: 30px;
+}
+
+
+.post_body {
+  max-height: 60px;
+  overflow: hidden;
+  transition: max-height 0.3s ease;
+}
+
+.post_body.expanded {
+  max-height: 500px; /* or a large value */
+}
+
+
+
+ /* ========== Footer ========== */
+
+ 
+/* ========== FEATURED CARD ========== */
+.news_card {
+    display: flex;
+    flex-wrap: nowrap; /* keep row */
+    gap: var(--gap);
+    margin-bottom: 40px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    background-color: #fff;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    color:black;
+}
+
+.news_card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+.post_thumbnail {
+    flex: 0 0 50%;
+    min-width: 300px;
+}
+
+.post_thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.post_info {
+    flex: 0 0 50%;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.post_info h2 {
+    margin: 0;
+    font-size: 1.5rem;
+}
+
+
+
+.read_more_btn {
+    width: fit-content;
+    background-color: #0c9e95;
+    color: #fff;
+    border: none;
+    padding: 6px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.read_more_btn:hover {
+    background-color: #09756e;
+}
+
+.category_button {
+    text-decoration: none;
+    color: #0d1849;
+    background-color: #cff6af;
+    padding: 4px 10px;
+    border-radius: 5px;
+    font-size: 0.85rem;
+    width: fit-content;
+    border-radius: 25px;
+    
+}
+
+.post_info small {
+    color: #777;
+}
+
+/* ========== JSON NEWS GRID ========== */
+.news_grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3 columns */
+    gap: var(--gap);
+    margin-top: 20px;
+    color:black;
+}
+
+.news_cardsmall {
+  background-color: #fff;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  display: flex;
+  flex-direction: column;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  align-self: start; /* 🔥 important */
+}
+
+
+.news_cardsmall:hover {
+   
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15);
+   transform: scale(1.07);
+}
+
+.news_cardsmall img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.news_cardsmall .post_info {
+    padding: 15px;
+    
+}
+
+/* Tailwind compatible */
+.scrollbar-hide::-webkit-scrollbar {
+    display: none; /* Chrome, Safari */
+}
+.scrollbar-hide {
+    -ms-overflow-style: none;  /* IE and Edge */
+    scrollbar-width: none;      /* Firefox */
+}
+
+
+
+
+/* SCI */
+
+/* Text animation */
+.hero-text {
+  opacity: 0;
+  transform: translateY(30px);
+  animation: fadeUp 1s ease-out forwards;
+}
+
+/* Line animation */
+.line-animate {
+  width: 0px;
+  animation: expandLine 1s ease-out forwards;
+  animation-delay: 0.6s;
+}
+
+/* Gradient animation */
+.gradient-animate {
+  background: linear-gradient(
+    90deg,
+    rgba(100,177,43,0.7),
+    rgba(0,0,0,0.4),
+    rgba(100,177,43,0.7)
+  );
+  background-size: 200% 200%;
+  animation: gradientMove 8s ease infinite;
+}
+
+.gradient-animate1{
+  background: linear-gradient(
+    90deg,
+    rgba(12, 158, 149,0.7),
+    rgba(0,0,0,0.4),
+    rgba(12, 158, 149)
+
+  );
+  background-size: 200% 200%;
+  animation: gradientMove 8s ease infinite;
+}
+
+
+.gradient-animateblue{
+    background: linear-gradient(
+    90deg,
+    rgba(13,24,73,0.7),
+    rgba(0,0,0,0.4),
+    rgba(13,24,73,0.7)
+
+  );
+  background-size: 200% 200%;
+  animation: gradientMove 8s ease infinite;
+}
+
+/* SCI */
+
+/* Keyframes */
+@keyframes fadeUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes expandLine {
+  to {
+    width: 300px;
+  }
+}
+
+@keyframes gradientMove {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+ 
+
+/* ========== RESPONSIVE ========== */
+@media (max-width: 1024px) {
+    .news_card {
+        flex-direction: column; /* stacked on tablet */
+    }
+    .post_thumbnail, .post_info {
+        flex: 1 1 100%;
+    }
+    .news_grid {
+        grid-template-columns: repeat(2, 1fr); /* 2-column grid */
+    }
+}
+
+@media (max-width: 768px) {
+    .news_grid {
+        grid-template-columns: 1fr; /* 1-column grid */
+    }
+}
+  /* card */
+
+  /* ========== Search ========== */
+  /* Search bar container */
+
+
+/* Add spacing around search + grid */
+.news_grid {
+    margin-top: 20px; 
+}
+
+
+
+
+
+/* For large devices */
+@media screen and (min-width: 1118px) {
+  /* Nav */
+  .nav {
+    height: calc(var(--header-height) + 2rem);.nav__menu .nav__list li::before{
+  
+    
+ 
+}
+    display: flex;
+    justify-content: space-between;
+  }
+  .nav__toggle {
+    display: none;
+  }
+  .nav__list {
+    display: flex;
+    column-gap: 3rem;
+    height: 100%;
+  }
+  .nav li {
+    display: flex;
+  }
+  .nav__link {
+    padding: 0;
+  }
+  .nav__link:hover {
+    background-color: initial;
+  }
+  /* Dropdown */
+  .dropdown__button {
+    column-gap: 0.25rem;
+    pointer-events: none;
+  }
+  .dropdown__container {
+    height: max-content;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 6.5rem;
+    background-color: var(--body-color);
+    box-shadow: 0 6px 8px hsla(220, 68%, 12%, 0.05);
+    pointer-events: none;
+    opacity: 0;
+    transition: top 0.4s, opacity 0.3s;
+  }
+  .dropdown__content {
+    grid-template-columns: repeat(4, max-content);
+    column-gap: 6rem;
+    max-width: 1120px;
+    margin-inline: auto;
+  }
+  .dropdown__group {
+    padding: 4rem 0;
+    align-content: baseline;
+    row-gap: 1.25rem;
+  }
+  .dropdown__group:first-child, .dropdown__group:last-child {
+    margin: 0;
+  }
+  .dropdown__list {
+    row-gap: 0.75rem;
+  }
+  .dropdown__icon {
+    width: 60px;
+    height: 60px;
+    background-color: var(--first-color-lighten);
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    margin-bottom: 1rem;
+  }
+  .dropdown__icon i {
+    font-size: 2rem;
+  }
+  .dropdown__title {
+    font-size: var(--normal-font-size);
+  }
+  
+  .dropdown__link {
+    font-size: var(--small-font-size);
+  }
+  .dropdown__link:hover {
+    color: var(--first-color);
+  }
+  .dropdown__item {
+    cursor: pointer;
+  }
+  .dropdown__item:hover .dropdown__arrow {
+    transform: rotate(180deg);
+  }
+  .dropdown__item:hover > .dropdown__container {
+    top: 5.5rem;
+    opacity: 1;
+    pointer-events: initial;
+    cursor: initial;
+  }
+}
+@media screen and (min-width: 1152px) {
+  .container {
+    margin-inline: auto;
+  }
+}
+
+
+/* Header Responsive */
+
+/* 1. Fix the Header Wrapper */
+header.header {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+/* 2. Top Bar (Logo & Profile) */
+.logo_head {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.5rem 5%;
+}
+
+/* 3. Navigation Bar */
+.nav.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #0c9e95; /* Match your brand color */
+    width: 100%;
+    max-width: 100% !important;
+    padding: 0 5%;
+}
+
+/* 4. Menu Items */
+.nav__list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+/* 5. Search Bar Fix */
+.search_container {
+    position: relative !important; /* Override the absolute right-0 */
+    right: auto !important;
+    padding-right: 0 !important;
+    display: flex;
+    align-items: center;
+}
+
+/* Mobile Adjustments */
+@media (max-width: 768px) {
+    .nav.container {
+        flex-direction: column;
+        padding: 10px;
+    }
+    
+    .nav__list {
+        gap: 10px;
+        font-size: 0.9rem;
+    }
+    
+    .search_container {
+        margin-top: 10px;
+    }
+}
+
